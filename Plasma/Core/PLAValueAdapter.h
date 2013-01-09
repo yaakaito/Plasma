@@ -9,4 +9,5 @@
 
 
 @interface PLAValueAdapter : NSObject
++ (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject;
 @end

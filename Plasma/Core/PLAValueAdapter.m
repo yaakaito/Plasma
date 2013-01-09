@@ -8,8 +8,15 @@
 #import "PLAValueAdapter.h"
 
 
-@implementation PLAValueAdapter {
+@interface PLAValueAdapter (Private)
+@property (nonatomic, strong) NSObject *keyObject;
+@end
 
+@implementation PLAValueAdapter
+
++ (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject {
+    NSString *keyPath = (NSString *)keyObject;
+    return [dictionary valueForKeyPath:keyPath];
 }
 
 @end
