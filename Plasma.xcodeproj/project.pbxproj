@@ -1,920 +1,520 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>4DABB8023C674FC1ADAC73D9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-PlasmaTests.a</string>
-			<key>path</key>
-			<string>libPods-PlasmaTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>592692EE65C242E28A8BB39E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-		</dict>
-		<key>8E9BA53C6F404800AB4F4304</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>91376315A27C49B9875A6615</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A4546CA721D64053A510EB93</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8E9BA53C6F404800AB4F4304</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9172679551A4505B1D37547</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4DABB8023C674FC1ADAC73D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC53169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC63169C70AB00506147</string>
-				<string>B9B0FC78169C70AB00506147</string>
-				<string>B9B0FC60169C70AB00506147</string>
-				<string>B9B0FC5F169C70AB00506147</string>
-				<string>91376315A27C49B9875A6615</string>
-				<string>EC181BEF976546739FF995C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC55169C70AB00506147</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0450</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>yaakaito.org</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>B9B0FC58169C70AB00506147</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B9B0FC53169C70AB00506147</string>
-			<key>productRefGroup</key>
-			<string>B9B0FC5F169C70AB00506147</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B9B0FC5D169C70AB00506147</string>
-				<string>B9B0FC6E169C70AB00506147</string>
-			</array>
-		</dict>
-		<key>B9B0FC58169C70AB00506147</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B9B0FC81169C70AB00506147</string>
-				<string>B9B0FC82169C70AB00506147</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B9B0FC5A169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC69169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC5B169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC62169C70AB00506147</string>
-				<string>A4546CA721D64053A510EB93</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC5C169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/${PRODUCT_NAME}</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC67169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC5D169C70AB00506147</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B9B0FC83169C70AB00506147</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B9B0FC5A169C70AB00506147</string>
-				<string>B9B0FC5B169C70AB00506147</string>
-				<string>B9B0FC5C169C70AB00506147</string>
-				<string>592692EE65C242E28A8BB39E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Plasma</string>
-			<key>productName</key>
-			<string>Plasma</string>
-			<key>productReference</key>
-			<string>B9B0FC5E169C70AB00506147</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>B9B0FC5E169C70AB00506147</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPlasma.a</string>
-			<key>path</key>
-			<string>libPlasma.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B9B0FC5F169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC5E169C70AB00506147</string>
-				<string>B9B0FC6F169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC60169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC61169C70AB00506147</string>
-				<string>B9B0FC70169C70AB00506147</string>
-				<string>B9B0FC72169C70AB00506147</string>
-				<string>8E9BA53C6F404800AB4F4304</string>
-				<string>4DABB8023C674FC1ADAC73D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC61169C70AB00506147</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B9B0FC62169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC61169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC63169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC66169C70AB00506147</string>
-				<string>B9B0FC68169C70AB00506147</string>
-				<string>B9B0FC64169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Plasma</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC64169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC65169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC65169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Plasma-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC66169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Plasma.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC67169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC66169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC68169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Plasma.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC69169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC68169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC6A169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC80169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC6B169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC71169C70AB00506147</string>
-				<string>B9B0FC73169C70AB00506147</string>
-				<string>B9B0FC74169C70AB00506147</string>
-				<string>B9B0FC77169C70AB00506147</string>
-				<string>A9172679551A4505B1D37547</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC6C169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B9B0FC7D169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B9B0FC6D169C70AB00506147</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string># Run the unit tests in this test bundle.
-"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
-</string>
-		</dict>
-		<key>B9B0FC6E169C70AB00506147</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B9B0FC86169C70AB00506147</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B9B0FC6A169C70AB00506147</string>
-				<string>B9B0FC6B169C70AB00506147</string>
-				<string>B9B0FC6C169C70AB00506147</string>
-				<string>B9B0FC6D169C70AB00506147</string>
-				<string>CA2883DDB98C432182645F30</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B9B0FC76169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PlasmaTests</string>
-			<key>productName</key>
-			<string>PlasmaTests</string>
-			<key>productReference</key>
-			<string>B9B0FC6F169C70AB00506147</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>B9B0FC6F169C70AB00506147</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>PlasmaTests.octest</string>
-			<key>path</key>
-			<string>PlasmaTests.octest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B9B0FC70169C70AB00506147</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SenTestingKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/SenTestingKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B9B0FC71169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC70169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC72169C70AB00506147</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B9B0FC73169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC72169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC74169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC61169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC75169C70AB00506147</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>B9B0FC55169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B9B0FC5D169C70AB00506147</string>
-			<key>remoteInfo</key>
-			<string>Plasma</string>
-		</dict>
-		<key>B9B0FC76169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>B9B0FC5D169C70AB00506147</string>
-			<key>targetProxy</key>
-			<string>B9B0FC75169C70AB00506147</string>
-		</dict>
-		<key>B9B0FC77169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC5E169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC78169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC7E169C70AB00506147</string>
-				<string>B9B0FC7F169C70AB00506147</string>
-				<string>B9B0FC79169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PlasmaTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC79169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC7A169C70AB00506147</string>
-				<string>B9B0FC7B169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC7A169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>PlasmaTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC7B169C70AB00506147</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B9B0FC7C169C70AB00506147</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC7C169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC7D169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC7B169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC7E169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PlasmaTests.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC7F169C70AB00506147</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PlasmaTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9B0FC80169C70AB00506147</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9B0FC7F169C70AB00506147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B9B0FC81169C70AB00506147</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B9B0FC82169C70AB00506147</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B9B0FC83169C70AB00506147</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B9B0FC84169C70AB00506147</string>
-				<string>B9B0FC85169C70AB00506147</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B9B0FC84169C70AB00506147</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>91376315A27C49B9875A6615</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/Plasma.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Plasma/Plasma-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B9B0FC85169C70AB00506147</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>91376315A27C49B9875A6615</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/Plasma.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Plasma/Plasma-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B9B0FC86169C70AB00506147</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B9B0FC87169C70AB00506147</string>
-				<string>B9B0FC88169C70AB00506147</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B9B0FC87169C70AB00506147</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EC181BEF976546739FF995C7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Plasma/Plasma-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PlasmaTests/PlasmaTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B9B0FC88169C70AB00506147</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EC181BEF976546739FF995C7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Plasma/Plasma-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PlasmaTests/PlasmaTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CA2883DDB98C432182645F30</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-PlasmaTests-resources.sh"
-</string>
-		</dict>
-		<key>EC181BEF976546739FF995C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-PlasmaTests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-PlasmaTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>B9B0FC55169C70AB00506147</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4546CA721D64053A510EB93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9BA53C6F404800AB4F4304 /* libPods.a */; };
+		A9172679551A4505B1D37547 /* libPods-PlasmaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */; };
+		B9B0FC62169C70AB00506147 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC61169C70AB00506147 /* Foundation.framework */; };
+		B9B0FC67169C70AB00506147 /* Plasma.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9B0FC66169C70AB00506147 /* Plasma.h */; };
+		B9B0FC69169C70AB00506147 /* Plasma.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0FC68169C70AB00506147 /* Plasma.m */; };
+		B9B0FC71169C70AB00506147 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC70169C70AB00506147 /* SenTestingKit.framework */; };
+		B9B0FC73169C70AB00506147 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC72169C70AB00506147 /* UIKit.framework */; };
+		B9B0FC74169C70AB00506147 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC61169C70AB00506147 /* Foundation.framework */; };
+		B9B0FC77169C70AB00506147 /* libPlasma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC5E169C70AB00506147 /* libPlasma.a */; };
+		B9B0FC7D169C70AB00506147 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B0FC7B169C70AB00506147 /* InfoPlist.strings */; };
+		B9B0FC80169C70AB00506147 /* PlasmaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0FC7F169C70AB00506147 /* PlasmaTests.m */; };
+		D0424154767917713846ABCE /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */; };
+		D0424165411E0DF6BF5CC5B4 /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */; };
+		D04242FE187D3349BB16E4E0 /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
+		D0424770BEB0852678E95B5C /* PLAModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424007152C7D71598370EE /* PLAModel.h */; };
+		D04247C9AAC056A8818218F7 /* PLAValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */; };
+		D04248978032CBD06DDB6F92 /* GHIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = D042450458114BD07E86A108 /* GHIssue.m */; };
+		D042490504FB8AA7A111D7A0 /* PLAValueAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */; };
+		D0424B47A99CD8258E848002 /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */; };
+		D0424DCCBC2B484FD97454EB /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */; };
+		D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9B0FC75169C70AB00506147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B0FC55169C70AB00506147 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B0FC5D169C70AB00506147;
+			remoteInfo = Plasma;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9B0FC5C169C70AB00506147 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				B9B0FC67169C70AB00506147 /* Plasma.h in CopyFiles */,
+				D04247C9AAC056A8818218F7 /* PLAValueTransformer.h in CopyFiles */,
+				D0424770BEB0852678E95B5C /* PLAModel.h in CopyFiles */,
+				D042490504FB8AA7A111D7A0 /* PLAValueAdapter.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PlasmaTests.a"; path = "libPods-PlasmaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9BA53C6F404800AB4F4304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91376315A27C49B9875A6615 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B9B0FC5E169C70AB00506147 /* libPlasma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPlasma.a; path = libPlasma.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B0FC61169C70AB00506147 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9B0FC65169C70AB00506147 /* Plasma-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Plasma-Prefix.pch"; sourceTree = "<group>"; };
+		B9B0FC66169C70AB00506147 /* Plasma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plasma.h; sourceTree = "<group>"; };
+		B9B0FC68169C70AB00506147 /* Plasma.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plasma.m; sourceTree = "<group>"; };
+		B9B0FC6F169C70AB00506147 /* PlasmaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PlasmaTests.octest; path = PlasmaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B0FC70169C70AB00506147 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9B0FC72169C70AB00506147 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9B0FC7A169C70AB00506147 /* PlasmaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlasmaTests-Info.plist"; sourceTree = "<group>"; };
+		B9B0FC7C169C70AB00506147 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9B0FC7E169C70AB00506147 /* PlasmaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlasmaTests.h; sourceTree = "<group>"; };
+		B9B0FC7F169C70AB00506147 /* PlasmaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlasmaTests.m; sourceTree = "<group>"; };
+		D0424007152C7D71598370EE /* PLAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAModel.h; sourceTree = "<group>"; };
+		D042418BF7AD07F9E35D6DD9 /* PLAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModel.m; sourceTree = "<group>"; };
+		D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueAdapter.m; sourceTree = "<group>"; };
+		D042450458114BD07E86A108 /* GHIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHIssue.m; sourceTree = "<group>"; };
+		D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
+		D0424CF0F5B94D1A932C9E3E /* GHIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHIssue.h; sourceTree = "<group>"; };
+		D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueTransformer.h; sourceTree = "<group>"; };
+		D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueAdapter.h; sourceTree = "<group>"; };
+		EC181BEF976546739FF995C7 /* Pods-PlasmaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlasmaTests.xcconfig"; path = "Pods/Pods-PlasmaTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9B0FC5B169C70AB00506147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B0FC62169C70AB00506147 /* Foundation.framework in Frameworks */,
+				A4546CA721D64053A510EB93 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B0FC6B169C70AB00506147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B0FC71169C70AB00506147 /* SenTestingKit.framework in Frameworks */,
+				B9B0FC73169C70AB00506147 /* UIKit.framework in Frameworks */,
+				B9B0FC74169C70AB00506147 /* Foundation.framework in Frameworks */,
+				B9B0FC77169C70AB00506147 /* libPlasma.a in Frameworks */,
+				A9172679551A4505B1D37547 /* libPods-PlasmaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9B0FC53169C70AB00506147 = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC63169C70AB00506147 /* Plasma */,
+				B9B0FC78169C70AB00506147 /* PlasmaTests */,
+				B9B0FC60169C70AB00506147 /* Frameworks */,
+				B9B0FC5F169C70AB00506147 /* Products */,
+				91376315A27C49B9875A6615 /* Pods.xcconfig */,
+				EC181BEF976546739FF995C7 /* Pods-PlasmaTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B9B0FC5F169C70AB00506147 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC5E169C70AB00506147 /* libPlasma.a */,
+				B9B0FC6F169C70AB00506147 /* PlasmaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9B0FC60169C70AB00506147 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC61169C70AB00506147 /* Foundation.framework */,
+				B9B0FC70169C70AB00506147 /* SenTestingKit.framework */,
+				B9B0FC72169C70AB00506147 /* UIKit.framework */,
+				8E9BA53C6F404800AB4F4304 /* libPods.a */,
+				4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B0FC63169C70AB00506147 /* Plasma */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC66169C70AB00506147 /* Plasma.h */,
+				B9B0FC68169C70AB00506147 /* Plasma.m */,
+				B9B0FC64169C70AB00506147 /* Supporting Files */,
+				D04240A8C6AB012170329D07 /* Transformer */,
+				D0424B3DAEDB6751B3BE60D5 /* Core */,
+			);
+			path = Plasma;
+			sourceTree = "<group>";
+		};
+		B9B0FC64169C70AB00506147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC65169C70AB00506147 /* Plasma-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9B0FC78169C70AB00506147 /* PlasmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC7E169C70AB00506147 /* PlasmaTests.h */,
+				B9B0FC7F169C70AB00506147 /* PlasmaTests.m */,
+				B9B0FC79169C70AB00506147 /* Supporting Files */,
+				D04241DF4806B1B267D05C64 /* PlasmaModels */,
+			);
+			path = PlasmaTests;
+			sourceTree = "<group>";
+		};
+		B9B0FC79169C70AB00506147 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9B0FC7A169C70AB00506147 /* PlasmaTests-Info.plist */,
+				B9B0FC7B169C70AB00506147 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D04240A8C6AB012170329D07 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */,
+				D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		D04241DF4806B1B267D05C64 /* PlasmaModels */ = {
+			isa = PBXGroup;
+			children = (
+				D042450458114BD07E86A108 /* GHIssue.m */,
+				D0424CF0F5B94D1A932C9E3E /* GHIssue.h */,
+			);
+			lastKnownFileType = text;
+			path = PlasmaModels;
+			sourceTree = "<group>";
+		};
+		D0424B3DAEDB6751B3BE60D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D042418BF7AD07F9E35D6DD9 /* PLAModel.m */,
+				D0424007152C7D71598370EE /* PLAModel.h */,
+				D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */,
+				D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9B0FC5D169C70AB00506147 /* Plasma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B0FC83169C70AB00506147 /* Build configuration list for PBXNativeTarget "Plasma" */;
+			buildPhases = (
+				B9B0FC5A169C70AB00506147 /* Sources */,
+				B9B0FC5B169C70AB00506147 /* Frameworks */,
+				B9B0FC5C169C70AB00506147 /* CopyFiles */,
+				592692EE65C242E28A8BB39E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plasma;
+			productName = Plasma;
+			productReference = B9B0FC5E169C70AB00506147 /* libPlasma.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B9B0FC6E169C70AB00506147 /* PlasmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B0FC86169C70AB00506147 /* Build configuration list for PBXNativeTarget "PlasmaTests" */;
+			buildPhases = (
+				B9B0FC6A169C70AB00506147 /* Sources */,
+				B9B0FC6B169C70AB00506147 /* Frameworks */,
+				B9B0FC6C169C70AB00506147 /* Resources */,
+				B9B0FC6D169C70AB00506147 /* ShellScript */,
+				CA2883DDB98C432182645F30 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B0FC76169C70AB00506147 /* PBXTargetDependency */,
+			);
+			name = PlasmaTests;
+			productName = PlasmaTests;
+			productReference = B9B0FC6F169C70AB00506147 /* PlasmaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9B0FC55169C70AB00506147 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = yaakaito.org;
+			};
+			buildConfigurationList = B9B0FC58169C70AB00506147 /* Build configuration list for PBXProject "Plasma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9B0FC53169C70AB00506147;
+			productRefGroup = B9B0FC5F169C70AB00506147 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9B0FC5D169C70AB00506147 /* Plasma */,
+				B9B0FC6E169C70AB00506147 /* PlasmaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B0FC6C169C70AB00506147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B0FC7D169C70AB00506147 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		592692EE65C242E28A8BB39E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		B9B0FC6D169C70AB00506147 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CA2883DDB98C432182645F30 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-PlasmaTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9B0FC5A169C70AB00506147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B0FC69169C70AB00506147 /* Plasma.m in Sources */,
+				D0424154767917713846ABCE /* PLAValueTransformer.m in Sources */,
+				D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */,
+				D0424B47A99CD8258E848002 /* PLAValueAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B0FC6A169C70AB00506147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B0FC80169C70AB00506147 /* PlasmaTests.m in Sources */,
+				D0424165411E0DF6BF5CC5B4 /* PLAValueTransformer.m in Sources */,
+				D04242FE187D3349BB16E4E0 /* PLAModel.m in Sources */,
+				D0424DCCBC2B484FD97454EB /* PLAValueAdapter.m in Sources */,
+				D04248978032CBD06DDB6F92 /* GHIssue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9B0FC76169C70AB00506147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B0FC5D169C70AB00506147 /* Plasma */;
+			targetProxy = B9B0FC75169C70AB00506147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9B0FC7B169C70AB00506147 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B0FC7C169C70AB00506147 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9B0FC81169C70AB00506147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9B0FC82169C70AB00506147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9B0FC84169C70AB00506147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91376315A27C49B9875A6615 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Plasma.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plasma/Plasma-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9B0FC85169C70AB00506147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91376315A27C49B9875A6615 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Plasma.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plasma/Plasma-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9B0FC87169C70AB00506147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC181BEF976546739FF995C7 /* Pods-PlasmaTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plasma/Plasma-Prefix.pch";
+				INFOPLIST_FILE = "PlasmaTests/PlasmaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B9B0FC88169C70AB00506147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC181BEF976546739FF995C7 /* Pods-PlasmaTests.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plasma/Plasma-Prefix.pch";
+				INFOPLIST_FILE = "PlasmaTests/PlasmaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9B0FC58169C70AB00506147 /* Build configuration list for PBXProject "Plasma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B0FC81169C70AB00506147 /* Debug */,
+				B9B0FC82169C70AB00506147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B0FC83169C70AB00506147 /* Build configuration list for PBXNativeTarget "Plasma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B0FC84169C70AB00506147 /* Debug */,
+				B9B0FC85169C70AB00506147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B0FC86169C70AB00506147 /* Build configuration list for PBXNativeTarget "PlasmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B0FC87169C70AB00506147 /* Debug */,
+				B9B0FC88169C70AB00506147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9B0FC55169C70AB00506147 /* Project object */;
+}
