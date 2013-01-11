@@ -7,16 +7,15 @@
 
 #import "PLAValueAdapter.h"
 
+#import "Overline.h"
+#import "NSDictionary+Path.h"
 
-@interface PLAValueAdapter (Private)
-@property (nonatomic, strong) NSObject *keyObject;
-@end
 
 @implementation PLAValueAdapter
 
 + (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject {
-    NSString *keyPath = (NSString *)keyObject;
-    return [dictionary valueForKeyPath:keyPath];
+    NSString *path = (NSString *)keyObject;
+    return [dictionary objectForPath:path];
 }
 
 @end
