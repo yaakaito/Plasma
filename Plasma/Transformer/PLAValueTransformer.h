@@ -9,4 +9,6 @@
 
 
 @interface PLAValueTransformer : NSValueTransformer
++ (id)transformerWithPath:(NSString *)path;
+- (id)transformedValueWithDictionary:(NSDictionary *)dictionary;
 @end
