@@ -8,7 +8,6 @@
 #import "PLAValueAdapter.h"
 
 #import "Overline.h"
-#import "NSDictionary+Path.h"
 
 
 @implementation PLAValueAdapter
