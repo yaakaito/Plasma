@@ -27,8 +27,10 @@
 
 - (void)testConvertToURL
 {
-    // TODO:
     PLAURLTransformer *t = [PLAURLTransformer transformerWithPath:@"hoge"];
-//    []
+    NSURL *url = [t transformedValueWithDictionary:@{
+            @"hoge" : @"http://example.com/"
+    }];
+    assertThat([url scheme], equalTo(@"http"));
 }
 @end
