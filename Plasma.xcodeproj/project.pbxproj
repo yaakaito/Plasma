@@ -15,19 +15,26 @@
 		B9B0FC71169C70AB00506147 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC70169C70AB00506147 /* SenTestingKit.framework */; };
 		B9B0FC73169C70AB00506147 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC72169C70AB00506147 /* UIKit.framework */; };
 		B9B0FC74169C70AB00506147 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC61169C70AB00506147 /* Foundation.framework */; };
-		B9B0FC77169C70AB00506147 /* libPlasma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC5E169C70AB00506147 /* libPlasma.a */; };
 		B9B0FC7D169C70AB00506147 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B0FC7B169C70AB00506147 /* InfoPlist.strings */; };
 		B9B0FC80169C70AB00506147 /* PlasmaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0FC7F169C70AB00506147 /* PlasmaTests.m */; };
+		B9DDB42216A07FD600A5A7AF /* libPlasma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC5E169C70AB00506147 /* libPlasma.a */; };
 		D0424154767917713846ABCE /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */; };
-		D0424165411E0DF6BF5CC5B4 /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */; };
-		D04242FE187D3349BB16E4E0 /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
+		D04243FB5092FE130E04E0A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0424084BD74285C00CDA676 /* SystemConfiguration.framework */; };
+		D042448E59738623BD9F8167 /* PLAURLTransformerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */; };
+		D04244E00E76FE5112226814 /* PLAURLTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D042479FE827EC65311F298B /* PLAURLTransformer.m */; };
+		D0424739F0E67C239FCFCB25 /* PLAModelSimplyMappingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D91FB1B89E2F01955F9 /* PLAModelSimplyMappingTest.m */; };
 		D0424770BEB0852678E95B5C /* PLAModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424007152C7D71598370EE /* PLAModel.h */; };
 		D04247C9AAC056A8818218F7 /* PLAValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */; };
-		D04248978032CBD06DDB6F92 /* GHIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = D042450458114BD07E86A108 /* GHIssue.m */; };
+		D042488D24F505A62ACA8054 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04243D4FE7EFF85F921D479 /* Security.framework */; };
 		D042490504FB8AA7A111D7A0 /* PLAValueAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */; };
 		D0424B47A99CD8258E848002 /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */; };
-		D0424DCCBC2B484FD97454EB /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */; };
+		D0424C73E0040625FE3D3788 /* PLAValueAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D6B7F50442152DBD03C /* PLAValueAdapterTest.m */; };
+		D0424CA7AC3487F540BA107A /* PLAURLTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */; };
+		D0424CB95F9C74B80BD46733 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04246A7CD13FC3BD1A345CF /* CFNetwork.framework */; };
+		D0424D36027347AA7D5004F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0424BB4B1C141AE53EA76ED /* CoreGraphics.framework */; };
+		D0424D6307A82D63E89114C2 /* PLAValueTransformerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */; };
 		D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
+		D0424ED787D6CA9753264153 /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248A2FE3B7B70791E7367 /* SimpleModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,21 +58,22 @@
 				D04247C9AAC056A8818218F7 /* PLAValueTransformer.h in CopyFiles */,
 				D0424770BEB0852678E95B5C /* PLAModel.h in CopyFiles */,
 				D042490504FB8AA7A111D7A0 /* PLAValueAdapter.h in CopyFiles */,
+				D0424CA7AC3487F540BA107A /* PLAURLTransformer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PlasmaTests.a"; path = "libPods-PlasmaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E9BA53C6F404800AB4F4304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlasmaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9BA53C6F404800AB4F4304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91376315A27C49B9875A6615 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		B9B0FC5E169C70AB00506147 /* libPlasma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPlasma.a; path = libPlasma.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B0FC5E169C70AB00506147 /* libPlasma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlasma.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B0FC61169C70AB00506147 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9B0FC65169C70AB00506147 /* Plasma-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Plasma-Prefix.pch"; sourceTree = "<group>"; };
 		B9B0FC66169C70AB00506147 /* Plasma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plasma.h; sourceTree = "<group>"; };
 		B9B0FC68169C70AB00506147 /* Plasma.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plasma.m; sourceTree = "<group>"; };
-		B9B0FC6F169C70AB00506147 /* PlasmaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PlasmaTests.octest; path = PlasmaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B0FC6F169C70AB00506147 /* PlasmaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlasmaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B0FC70169C70AB00506147 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9B0FC72169C70AB00506147 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9B0FC7A169C70AB00506147 /* PlasmaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlasmaTests-Info.plist"; sourceTree = "<group>"; };
@@ -73,11 +81,21 @@
 		B9B0FC7E169C70AB00506147 /* PlasmaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlasmaTests.h; sourceTree = "<group>"; };
 		B9B0FC7F169C70AB00506147 /* PlasmaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlasmaTests.m; sourceTree = "<group>"; };
 		D0424007152C7D71598370EE /* PLAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAModel.h; sourceTree = "<group>"; };
+		D0424084BD74285C00CDA676 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformerTest.m; sourceTree = "<group>"; };
 		D042418BF7AD07F9E35D6DD9 /* PLAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModel.m; sourceTree = "<group>"; };
 		D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueAdapter.m; sourceTree = "<group>"; };
-		D042450458114BD07E86A108 /* GHIssue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHIssue.m; sourceTree = "<group>"; };
+		D04243D4FE7EFF85F921D479 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
-		D0424CF0F5B94D1A932C9E3E /* GHIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHIssue.h; sourceTree = "<group>"; };
+		D04246A7CD13FC3BD1A345CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D042479FE827EC65311F298B /* PLAURLTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformer.m; sourceTree = "<group>"; };
+		D04248A2FE3B7B70791E7367 /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
+		D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAURLTransformer.h; sourceTree = "<group>"; };
+		D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformerTest.m; sourceTree = "<group>"; };
+		D0424B0F5011FB4F458EC7CE /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
+		D0424BB4B1C141AE53EA76ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0424D6B7F50442152DBD03C /* PLAValueAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueAdapterTest.m; sourceTree = "<group>"; };
+		D0424D91FB1B89E2F01955F9 /* PLAModelSimplyMappingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModelSimplyMappingTest.m; sourceTree = "<group>"; };
 		D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueTransformer.h; sourceTree = "<group>"; };
 		D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAValueAdapter.h; sourceTree = "<group>"; };
 		EC181BEF976546739FF995C7 /* Pods-PlasmaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlasmaTests.xcconfig"; path = "Pods/Pods-PlasmaTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -100,8 +118,12 @@
 				B9B0FC71169C70AB00506147 /* SenTestingKit.framework in Frameworks */,
 				B9B0FC73169C70AB00506147 /* UIKit.framework in Frameworks */,
 				B9B0FC74169C70AB00506147 /* Foundation.framework in Frameworks */,
-				B9B0FC77169C70AB00506147 /* libPlasma.a in Frameworks */,
 				A9172679551A4505B1D37547 /* libPods-PlasmaTests.a in Frameworks */,
+				D0424CB95F9C74B80BD46733 /* CFNetwork.framework in Frameworks */,
+				D04243FB5092FE130E04E0A2 /* SystemConfiguration.framework in Frameworks */,
+				D042488D24F505A62ACA8054 /* Security.framework in Frameworks */,
+				D0424D36027347AA7D5004F7 /* CoreGraphics.framework in Frameworks */,
+				B9DDB42216A07FD600A5A7AF /* libPlasma.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +159,10 @@
 				B9B0FC72169C70AB00506147 /* UIKit.framework */,
 				8E9BA53C6F404800AB4F4304 /* libPods.a */,
 				4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */,
+				D04246A7CD13FC3BD1A345CF /* CFNetwork.framework */,
+				D0424084BD74285C00CDA676 /* SystemConfiguration.framework */,
+				D04243D4FE7EFF85F921D479 /* Security.framework */,
+				D0424BB4B1C141AE53EA76ED /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +175,8 @@
 				B9B0FC64169C70AB00506147 /* Supporting Files */,
 				D04240A8C6AB012170329D07 /* Transformer */,
 				D0424B3DAEDB6751B3BE60D5 /* Core */,
+				D0424899FCE09574D3DEB802 /* API */,
+				D04246EB6CDD059D61C49588 /* Presets */,
 			);
 			path = Plasma;
 			sourceTree = "<group>";
@@ -168,6 +196,9 @@
 				B9B0FC7F169C70AB00506147 /* PlasmaTests.m */,
 				B9B0FC79169C70AB00506147 /* Supporting Files */,
 				D04241DF4806B1B267D05C64 /* PlasmaModels */,
+				D042473EC5A7DFDEEC827D3D /* Core */,
+				D04245150BF3EBADFF387323 /* Transformer */,
+				D0424C1520186DF2E536B017 /* Presets */,
 			);
 			path = PlasmaTests;
 			sourceTree = "<group>";
@@ -193,11 +224,50 @@
 		D04241DF4806B1B267D05C64 /* PlasmaModels */ = {
 			isa = PBXGroup;
 			children = (
-				D042450458114BD07E86A108 /* GHIssue.m */,
-				D0424CF0F5B94D1A932C9E3E /* GHIssue.h */,
+				D04248A2FE3B7B70791E7367 /* SimpleModel.m */,
+				D0424B0F5011FB4F458EC7CE /* SimpleModel.h */,
 			);
-			lastKnownFileType = text;
 			path = PlasmaModels;
+			sourceTree = "<group>";
+		};
+		D04245150BF3EBADFF387323 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		D04246EB6CDD059D61C49588 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				D0424E7A208157327083C527 /* Transformer */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		D042473EC5A7DFDEEC827D3D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D0424D6B7F50442152DBD03C /* PLAValueAdapterTest.m */,
+				D0424D91FB1B89E2F01955F9 /* PLAModelSimplyMappingTest.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D042487FEC097C0954E13A9C /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		D0424899FCE09574D3DEB802 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		D0424B3DAEDB6751B3BE60D5 /* Core */ = {
@@ -209,6 +279,23 @@
 				D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D0424C1520186DF2E536B017 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				D042487FEC097C0954E13A9C /* Transformer */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		D0424E7A208157327083C527 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				D042479FE827EC65311F298B /* PLAURLTransformer.m */,
+				D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */,
+			);
+			path = Transformer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +430,7 @@
 				D0424154767917713846ABCE /* PLAValueTransformer.m in Sources */,
 				D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */,
 				D0424B47A99CD8258E848002 /* PLAValueAdapter.m in Sources */,
+				D04244E00E76FE5112226814 /* PLAURLTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9B0FC80169C70AB00506147 /* PlasmaTests.m in Sources */,
-				D0424165411E0DF6BF5CC5B4 /* PLAValueTransformer.m in Sources */,
-				D04242FE187D3349BB16E4E0 /* PLAModel.m in Sources */,
-				D0424DCCBC2B484FD97454EB /* PLAValueAdapter.m in Sources */,
-				D04248978032CBD06DDB6F92 /* GHIssue.m in Sources */,
+				D0424C73E0040625FE3D3788 /* PLAValueAdapterTest.m in Sources */,
+				D0424D6307A82D63E89114C2 /* PLAValueTransformerTest.m in Sources */,
+				D042448E59738623BD9F8167 /* PLAURLTransformerTest.m in Sources */,
+				D0424ED787D6CA9753264153 /* SimpleModel.m in Sources */,
+				D0424739F0E67C239FCFCB25 /* PLAModelSimplyMappingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -421,6 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -11,6 +11,7 @@
 
 #import "PLAValueAdapter.h"
 #import "PLAValueTransformer.h"
+#import "PLAURLTransformer.h"
 
 @interface PLAValueAdapterTest : SenTestCase
 @property (nonatomic, strong) NSDictionary *testDictionary;
@@ -23,6 +24,7 @@
     self.testDictionary = @{
             @"string" : @"stringObject",
             @"number" : @1,
+            @"url"    : @"http://example.com"
     };
 }
 
@@ -42,6 +44,13 @@
     NSString *key = @"number";
     NSNumber *value  = [PLAValueAdapter valueWithDictionary:self.testDictionary andKeyObject:key];
     assertThat(value, equalTo(@1));
+}
+
+- (void)testAdaptTransformer
+{
+    NSString *key = @"url";
+    NSURL *url = [PLAValueAdapter valueWithDictionary:self.testDictionary andKeyObject:PLA_URL(key)];
+    assertThat([url class], equalTo([NSURL class]));
 }
 
 @end

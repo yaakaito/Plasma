@@ -11,4 +11,5 @@
 @interface SimpleModel : PLAModel
 @property (nonatomic, strong) NSString *stringProp;
 @property (nonatomic, strong) NSNumber *numberProp;
+@property (nonatomic, strong) NSURL *urlProp;
 @end

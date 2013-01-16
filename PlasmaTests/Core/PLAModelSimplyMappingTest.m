@@ -23,7 +23,8 @@
 - (void)setUp {
     model = [SimpleModel modelWithDictionary:@{
             @"stringKey" : @"hoge",
-            @"numberKey" : @10
+            @"numberKey" : @10,
+            @"urlKey"    : @"http://example.com/"
     }];
 }
 
@@ -33,5 +34,10 @@
 
 - (void)testCanSetNumberValue {
     assertThat(model.numberProp, equalTo(@10));
+}
+
+- (void)testCanSetPresetURLValue {
+    assertThat([model.urlProp class], equalTo([NSURL class]));
+    assertThat([model.urlProp scheme], equalTo(@"http"));
 }
 @end

@@ -7,14 +7,22 @@
 
 #import "PLAValueAdapter.h"
 
+#import "PLAValueTransformer.h"
 #import "Overline.h"
+
 
 
 @implementation PLAValueAdapter
 
 + (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject {
-    NSString *path = (NSString *)keyObject;
-    return [dictionary objectForPath:path];
+    if ([keyObject isKindOfClass:[PLAValueTransformer class]]) {
+        PLAValueTransformer *transformer = (PLAValueTransformer *)keyObject;
+        return [transformer transformedValueWithDictionary:dictionary];
+    }
+    else {
+        NSString *path = (NSString *)keyObject;
+        return [dictionary objectForPath:path];
+    }
 }
 
 @end

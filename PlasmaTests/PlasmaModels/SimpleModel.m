@@ -6,6 +6,7 @@
 
 
 #import "SimpleModel.h"
+#import "PLAURLTransformer.h"
 
 
 @implementation SimpleModel {
@@ -15,7 +16,8 @@
 + (NSDictionary *)propMapping {
     return @{
             @"stringProp": @"stringKey",
-            @"numberProp": @"numberKey"
+            @"numberProp": @"numberKey",
+            @"urlProp"   : PLA_URL(@"urlKey")
     };
 }
 @end
