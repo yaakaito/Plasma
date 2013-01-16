@@ -1,0 +1,28 @@
+# Plasma
+
+Model and API response parser freamework for CocoaTouch.
+
+## PLAModel 
+simply model framework
+
+## PLAWebModel
+
+```objective-c
+@interface SimpleModel : PLAModel
+@property (nonatomic, strong) NSString *stringProp;
+@property (nonatomic, strong) NSNumber *numberProp;
+@property (nonatomic, strong) NSURL *urlProp;
+@end
+```
+
+```objective-c
++ (NSDictionary *)propMapping {
+    return @{
+            @"stringProp": @"stringKey",
+            @"numberProp": @"numberKey",
+            @"urlProp"   : PLA_URL(@"urlKey")
+    };
+}
+```
+
+### Want fix
