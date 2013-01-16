@@ -5,8 +5,6 @@ Model and API response parser freamework for CocoaTouch.
 ## PLAModel 
 simply model framework
 
-## PLAWebModel
-
 ```objective-c
 @interface SimpleModel : PLAModel
 @property (nonatomic, strong) NSString *stringProp;
@@ -24,5 +22,7 @@ simply model framework
     };
 }
 ```
+
+## PLAWebModel
 
 ### Want fix
