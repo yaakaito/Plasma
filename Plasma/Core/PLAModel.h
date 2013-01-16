@@ -9,4 +9,7 @@
 
 
 @interface PLAModel : NSObject
++ (id)modelWithDictionary:(NSDictionary *)dictionary;
++ (NSDictionary *)propMapping; // TODO: Rename
+
 @end
