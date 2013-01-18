@@ -1,0 +1,69 @@
+//
+// Created by yaakaito on 2013/01/19.
+//
+// To change the template use AppCode | Preferences | File Templates.
+//
+
+
+#import "PLAModelList.h"
+#import "PLAException.h"
+#import "PLAModel.h"
+#import "Overline.h"
+
+@interface PLAModelList ()
+@property (nonatomic, strong) NSMutableArray *models;
+@end
+
+@implementation PLAModelList {
+
+}
+
++ (id)modelListWithArray:(NSArray *)array {
+    return [[self alloc] initWithArray:array];
+}
+
+- (id)initWithArray:(NSArray *)array {
+    self = [super init];
+    if (self == nil) {
+        return nil;
+    }
+
+    if (![self.class isValidModelClass:[self.class listedModelClass]]) {
+        // TODO: Exception
+        return nil;
+    }
+
+    [self createModelsFromArray:array];
+
+    return self;
+}
+
+- (void)createModelsFromArray:(NSArray *)array {
+    self.models =[NSMutableArray arrayWithArray:[self.class modelsFormArray:array
+                                                                      class:[self.class listedModelClass]]];
+}
+
++ (NSArray *)modelsFormArray:(NSArray *)array class:(Class)clazz {
+   return [array mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
+       return [clazz modelWithDictionary:obj];
+   }];
+}
+
++ (BOOL)isValidModelClass:(Class)clazz {
+    return [[[clazz alloc] init] isKindOfClass:[PLAModel class]];
+}
+
++ (Class)listedModelClass {
+    PLAException *exception = [PLAException plasmaModelListNotSetListedModelClassExceptionWithClass:[self class]];
+    NSLog(@"%@", exception.reason);
+    #if DEBUG
+    @throw exception;
+    #endif
+    return nil;
+}
+
+- (NSArray *)array {
+    return [NSArray arrayWithArray:self.models];
+}
+
+@end
