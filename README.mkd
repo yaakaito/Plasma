@@ -14,6 +14,7 @@ simply model framework
 ```
 
 ```objective-c
+@implementation SimpleModel
 + (NSDictionary *)propMapping {
     return @{
             @"stringProp": @"stringKey",
@@ -21,8 +22,24 @@ simply model framework
             @"urlProp"   : PLA_URL(@"urlKey")
     };
 }
+@end
+```
+
+### PLAModelList
+
+```objective-c
+@interface SimpleModelList : PLAModelList
+@end
+```
+
+```objective-c
+@implementation SimpleModelList
++ (Class)listedModelClass {
+    return [SimpleModel class];
+}
+@end
 ```
 
 ## PLAWebModel
 
-### Want fix
+coming soon ...
