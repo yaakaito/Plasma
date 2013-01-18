@@ -7,6 +7,7 @@
 
 #import "SimpleModel.h"
 #import "PLAURLTransformer.h"
+#import "SimpleModelListTransformer.h"
 
 
 @implementation SimpleModel {
@@ -17,7 +18,8 @@
     return @{
             @"stringProp": @"stringKey",
             @"numberProp": @"numberKey",
-            @"urlProp"   : PLA_URL(@"urlKey")
+            @"urlProp"   : PLA_URL(@"urlKey"),
+            @"simpleModelListProp" : SIMPLE_LIST(@"models")
     };
 }
 @end

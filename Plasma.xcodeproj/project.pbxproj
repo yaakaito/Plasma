@@ -28,6 +28,7 @@
 		D0424739F0E67C239FCFCB25 /* PLAModelSimplyMappingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D91FB1B89E2F01955F9 /* PLAModelSimplyMappingTest.m */; };
 		D0424770BEB0852678E95B5C /* PLAModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424007152C7D71598370EE /* PLAModel.h */; };
 		D04247C9AAC056A8818218F7 /* PLAValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDC0A1B008B7C8511FB /* PLAValueTransformer.h */; };
+		D042482E0DD467DA377FF89C /* SimpleModelListTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D042442FBDFFC456F1713565 /* SimpleModelListTransformer.m */; };
 		D042488D24F505A62ACA8054 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04243D4FE7EFF85F921D479 /* Security.framework */; };
 		D0424899E55BADC7EE605B8D /* PLAModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424420C650FC7E3CDECFA0 /* PLAModelList.m */; };
 		D042490036B65CED251E1DF7 /* SimpleModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243E7F028F4354AFBE092 /* SimpleModelList.m */; };
@@ -100,12 +101,14 @@
 		D04243E7F028F4354AFBE092 /* SimpleModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModelList.m; sourceTree = "<group>"; };
 		D04243F2C2ED46BA17D51999 /* PLAModelListSimplyConvertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModelListSimplyConvertTest.m; sourceTree = "<group>"; };
 		D0424420C650FC7E3CDECFA0 /* PLAModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModelList.m; sourceTree = "<group>"; };
+		D042442FBDFFC456F1713565 /* SimpleModelListTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModelListTransformer.m; sourceTree = "<group>"; };
 		D042446ED6038AF046F9181F /* SimpleModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModelList.h; sourceTree = "<group>"; };
 		D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
 		D04246A7CD13FC3BD1A345CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D042479FE827EC65311F298B /* PLAURLTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformer.m; sourceTree = "<group>"; };
 		D04248A2FE3B7B70791E7367 /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
 		D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAURLTransformer.h; sourceTree = "<group>"; };
+		D0424A5119F5CE5E455C8496 /* SimpleModelListTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModelListTransformer.h; sourceTree = "<group>"; };
 		D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformerTest.m; sourceTree = "<group>"; };
 		D0424B0B669724E9432B9A36 /* PLAExceptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAExceptionTest.m; sourceTree = "<group>"; };
 		D0424B0F5011FB4F458EC7CE /* SimpleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleModel.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				D0424B0F5011FB4F458EC7CE /* SimpleModel.h */,
 				D04243E7F028F4354AFBE092 /* SimpleModelList.m */,
 				D042446ED6038AF046F9181F /* SimpleModelList.h */,
+				D042442FBDFFC456F1713565 /* SimpleModelListTransformer.m */,
+				D0424A5119F5CE5E455C8496 /* SimpleModelListTransformer.h */,
 			);
 			path = PlasmaModels;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				D0424127696799E25A9D963F /* PLAExceptionTest.m in Sources */,
 				D042490036B65CED251E1DF7 /* SimpleModelList.m in Sources */,
 				D0424C3A9CCC6CFC0DB7ACA6 /* PLAModelListSimplyConvertTest.m in Sources */,
+				D042482E0DD467DA377FF89C /* SimpleModelListTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

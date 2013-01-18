@@ -10,6 +10,7 @@
 #import <OCHamcrest/OCHamcrest.h>
 
 #import "SimpleModel.h"
+#import "PLAModelList.h"
 
 @interface PLAModelSimplyMappingTest : SenTestCase
 {
@@ -24,7 +25,19 @@
     model = [SimpleModel modelWithDictionary:@{
             @"stringKey" : @"hoge",
             @"numberKey" : @10,
-            @"urlKey"    : @"http://example.com/"
+            @"urlKey"    : @"http://example.com/",
+            @"models"    : @[
+                    @{
+                            @"stringKey" : @"hoge",
+                            @"numberKey" : @10,
+                            @"urlKey"    : @"http://example.com/"
+                    },
+                    @{
+                            @"stringKey" : @"fuga",
+                            @"numberKey" : @20,
+                            @"urlKey"    : @"http://example2.com/"
+                    }
+            ]
     }];
 }
 
@@ -39,5 +52,10 @@
 - (void)testCanSetPresetURLValue {
     assertThat([model.urlProp class], equalTo([NSURL class]));
     assertThat([model.urlProp scheme], equalTo(@"http"));
+}
+
+- (void)testCanSetModelListValue {
+    // TODO:
+    //assertThatInteger([model.simpleModelListProp models].count, equalToInteger(2));
 }
 @end

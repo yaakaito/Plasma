@@ -7,9 +7,11 @@
 
 #import "PLAModel.h"
 
+@class SimpleModelList;
 
 @interface SimpleModel : PLAModel
 @property (nonatomic, strong) NSString *stringProp;
 @property (nonatomic, strong) NSNumber *numberProp;
 @property (nonatomic, strong) NSURL *urlProp;
+@property (nonatomic, strong) SimpleModelList *simpleModelListProp;
 @end
