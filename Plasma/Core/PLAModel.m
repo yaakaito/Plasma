@@ -41,4 +41,26 @@
 + (NSDictionary *)propMapping {
     return @{};
 }
+
+- (BOOL)isEqual:(PLAModel *)model {
+    if (self == model) {
+        return YES;
+    }
+
+    if (![model isMemberOfClass:self.class]) {
+        return NO;
+    }
+
+    for (NSString *property in [[self.class propMapping] allKeys]) {
+        id left  = [self valueForKey:property];
+        id right = [model valueForKey:property];
+
+        BOOL e = ((left == nil && right == nil) || [left isEqual:right]);
+        if (!e) {
+            return NO;
+        }
+    }
+
+    return YES;
+}
 @end
