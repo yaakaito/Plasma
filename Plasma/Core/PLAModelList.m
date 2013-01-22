@@ -66,4 +66,26 @@
     return [NSArray arrayWithArray:self.models];
 }
 
+- (BOOL)isEqual:(PLAModelList *)modelList {
+    if (self == modelList) {
+        return YES;
+    }
+
+    if (![modelList isMemberOfClass:self.class]) {
+        return NO;
+    }
+
+    if (self.models.count != modelList.models.count) {
+        return NO;
+    }
+
+    for (int i = 0; i < modelList.models.count; i++) {
+        BOOL e = [self.models[i] isEqual:modelList.models[i]];
+        if (!e) {
+            return NO;
+        }
+    }
+
+    return YES;
+}
 @end

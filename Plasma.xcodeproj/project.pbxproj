@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3D5F495C6FCFDE76644525 /* PLAModelListEqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54994CF2C6A861AD66F9 /* PLAModelListEqualsTest.m */; };
 		A4546CA721D64053A510EB93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9BA53C6F404800AB4F4304 /* libPods.a */; };
 		A9172679551A4505B1D37547 /* libPods-PlasmaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */; };
 		B9B0FC62169C70AB00506147 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC61169C70AB00506147 /* Foundation.framework */; };
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3D54994CF2C6A861AD66F9 /* PLAModelListEqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModelListEqualsTest.m; sourceTree = "<group>"; };
 		4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlasmaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9BA53C6F404800AB4F4304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91376315A27C49B9875A6615 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -280,6 +282,7 @@
 				D0424FBEDCCA5F8AC6677BED /* PLAModelListTest.m */,
 				D0424B0B669724E9432B9A36 /* PLAExceptionTest.m */,
 				D04243F2C2ED46BA17D51999 /* PLAModelListSimplyConvertTest.m */,
+				1C3D54994CF2C6A861AD66F9 /* PLAModelListEqualsTest.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				D042490036B65CED251E1DF7 /* SimpleModelList.m in Sources */,
 				D0424C3A9CCC6CFC0DB7ACA6 /* PLAModelListSimplyConvertTest.m in Sources */,
 				D042482E0DD467DA377FF89C /* SimpleModelListTransformer.m in Sources */,
+				1C3D5F495C6FCFDE76644525 /* PLAModelListEqualsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
