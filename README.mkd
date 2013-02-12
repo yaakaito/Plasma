@@ -40,6 +40,17 @@ simply model framework
 @end
 ```
 
-## PLAWebModel
+## PLAWebAPIModel (extends::PLAModel)
 
-coming soon ...
+resource from Web API.
+
+```objective-c
+UserModel *user = [UserModel modelWithResourceURL:[NSURL URLWithString:@"http://example.com/api/user/1"]];
+[user reloadModel];
+```
+
+
+
+### Update and syncing
+
+TBD

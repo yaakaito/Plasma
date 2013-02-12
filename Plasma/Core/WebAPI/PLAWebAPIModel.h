@@ -6,6 +6,7 @@
 
 
 #import "PLAModel.h"
+#import "PLAWebAPIModelProtocol.h"
 
 typedef void(^PLAWebAPIModelCallbackBlock)(id object, NSError *error);
 
@@ -13,8 +14,9 @@ extern NSString *kPLAModelReloadSuccess;
 extern NSString *kPLAModelReloadFailure;
 
 
-@interface PLAWebAPIModel : PLAModel
+@interface PLAWebAPIModel : PLAModel <PLAWebAPIModelProtocol>
 + (id)modelWithResourceURL:(NSURL *)url;
+- (id)initWithResourceURL:(NSURL *)url;
 - (void)reloadModel;
 - (void)reloadModelWithCallback:(PLAWebAPIModelCallbackBlock)callback;
 + (BOOL)useNotification;

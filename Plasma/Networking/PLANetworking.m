@@ -7,6 +7,7 @@
 
 #import "PLANetworking.h"
 
+#import "PLAWebAPIModelProtocol.h"
 
 @implementation PLANetworking {
 
@@ -22,12 +23,19 @@
 
     __weak PLANetworking *that = self;
     [netwoker networking:that
-         startNetworking:^(NSData * response, NSDictionary * userInfo) {
-            // TODO:
-            [that.source updateWithDictionary:response];
+         startNetworking:^(id response, NSDictionary * userInfo) {
+            [that sourceUpdateWithResponse:response userInfo:userInfo];
          }
          failureCallback:^(NSError * error) {
             // TODO:
          }];
+}
+
+- (void)sourceUpdateWithResponse:(id)response userInfo:(NSDictionary *)userInfo {
+
+    NSObject<PLAWebAPIModelProtocol> *source = (NSObject<PLAWebAPIModelProtocol> *)self.source;
+    if ([source respondsToSelector:@selector(updateWithResponse:userInfo:)]) {
+        [source updateWithResponse:response userInfo:userInfo];
+    }
 }
 @end

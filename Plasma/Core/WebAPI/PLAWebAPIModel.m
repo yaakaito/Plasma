@@ -10,7 +10,27 @@
 NSString *kPLAModelReloadSuccess = @"ReloadSuccess";
 NSString *kPLAModelReloadFailure = @"ReloadFailure";
 
+@interface PLAWebAPIModel ()
+@property (nonatomic, strong) NSURL *_resourceURL;
+@end
+
 @implementation PLAWebAPIModel {
+
+}
+
+- (id)modelWithResourceURL:(NSURL *)url {
+    return [[self.class alloc] initWithResourceURL:url];
+}
+
+- (id)initWithResourceURL:(NSURL *)url {
+
+}
+
+- (void)reloadModel {
+    [self reloadModelWithCallback:nil];
+}
+
+- (void)reloadModelWithCallback:(PLAWebAPIModelCallbackBlock)callback {
 
 }
 
