@@ -30,7 +30,7 @@
 - (void)sourceUpdateWithResponse:(id)response userInfo:(NSDictionary *)userInfo {
 
     NSObject<PLAWebAPIModelProtocol> *source = (NSObject<PLAWebAPIModelProtocol> *)self.source;
-    if ([source respondsToSelector:@selector(updateWithResponse:userInfo:)]) {
+    if ([source respondsToSelector:@selector(updateWithResponse:userInfo:error:)]) {
         NSError *error = nil;
         [source updateWithResponse:response userInfo:userInfo error:&error];
         if (error) {
