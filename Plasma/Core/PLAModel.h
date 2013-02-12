@@ -11,5 +11,5 @@
 @interface PLAModel : NSObject
 + (id)modelWithDictionary:(NSDictionary *)dictionary;
 + (NSDictionary *)propMapping; // TODO: Rename
-
+- (void)updateWithDictionary:(NSDictionary *)dictionary;
 @end

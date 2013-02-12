@@ -11,6 +11,7 @@
 @interface PLANetworking : NSObject
 
 @property (nonatomic, weak) NSObject *source;
+@property (nonatomic, strong) NSURL *url;
 
-+ (NSObject<PLANetworkerProtocol> *)networker;
+- (void)start;
 @end

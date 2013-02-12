@@ -11,9 +11,15 @@
 @implementation PLAException {
 
 }
-+ (instancetype)plasmaModelListNotSetListedModelClassExceptionWithClass:(Class)clazz{
++ (instancetype)plasmaModelListNotSetListedModelClassExceptionWithClass:(Class)clazz {
     return [[self alloc] initWithName:@"PLASMANotSetListedModelClassException"
                                reason:[NSString stringWithFormat:@"*** Plasma Exception: Not overrided `listedModelClass` on %@", NSStringFromClass(clazz)]
                              userInfo:nil];
+}
+
++ (instancetype)plasmaWebModelNetworkerUnknownExceptionWithClass:(Class)clazz {
+    return [[self alloc] initWithName:@"PLASMAWebModelNetwokerUnknownException"
+                               reason:[NSString stringWithFormat:@"*** Plasma Exception: Not overrided `networkerClass` on %@", NSStringFromClass(clazz)]
+                             userInfo:nil];    
 }
 @end

@@ -8,6 +8,8 @@
 #import "PLAModel.h"
 #import "PLAWebAPIModelProtocol.h"
 
+@class PLAResponseParser;
+
 typedef void(^PLAWebAPIModelCallbackBlock)(id object, NSError *error);
 
 extern NSString *kPLAModelReloadSuccess;
@@ -23,4 +25,5 @@ extern NSString *kPLAModelReloadFailure;
 + (NSString *)notificationPrefix;
 + (NSString *)notificationSuffix;
 + (NSDictionary *)notificationNames;
++ (Class)responseParserClass;
 @end

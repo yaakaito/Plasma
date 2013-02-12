@@ -20,7 +20,7 @@
     return [NSDictionary class];
 }
 
-- (NSDictionary *)parseResponse:(id)response {
+- (NSDictionary *)parseResponse:(id)response userInfo:(NSDictionary *)userInfo error:(NSError *__autoreleasing *)error {
     return (NSDictionary *)response;
 }
 @end

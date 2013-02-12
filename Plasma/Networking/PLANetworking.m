@@ -9,25 +9,21 @@
 
 #import "PLAWebAPIModelProtocol.h"
 
-@implementation PLANetworking {
-
-}
-
-+ (NSObject<PLANetworkerProtocol> *)networker{
-    return nil;
-}
+@implementation PLANetworking
 
 - (void)start {
+    
+    NSObject<PLAWebAPIModelProtocol> *source = (NSObject<PLAWebAPIModelProtocol> *)self.source;
 
-    NSObject<PLANetworkerProtocol> *netwoker = [self.class networker];
+    NSObject<PLANetworkerProtocol> *netwoker = [source.class networker];
 
     __weak PLANetworking *that = self;
     [netwoker networking:that
          startNetworking:^(id response, NSDictionary * userInfo) {
-            [that sourceUpdateWithResponse:response userInfo:userInfo];
+             [that sourceUpdateWithResponse:response userInfo:userInfo];
          }
          failureCallback:^(NSError * error) {
-            // TODO:
+             [that sourceUpdateFailureWithError:error];
          }];
 }
 
@@ -35,7 +31,20 @@
 
     NSObject<PLAWebAPIModelProtocol> *source = (NSObject<PLAWebAPIModelProtocol> *)self.source;
     if ([source respondsToSelector:@selector(updateWithResponse:userInfo:)]) {
-        [source updateWithResponse:response userInfo:userInfo];
+        NSError *error = nil;
+        [source updateWithResponse:response userInfo:userInfo error:&error];
+        if (error) {
+            [self sourceUpdateFailureWithError:error];
+        }
     }
+}
+
+- (void)sourceUpdateFailureWithError:(NSError *)error {
+    
+    NSObject<PLAWebAPIModelProtocol> *source = (NSObject<PLAWebAPIModelProtocol> *)self.source;
+    if ([source respondsToSelector:@selector(updateFailureWithError:)]) {
+        [source updateFailureWithError:error];
+    }
+    
 }
 @end

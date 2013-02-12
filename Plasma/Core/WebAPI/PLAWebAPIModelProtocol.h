@@ -4,8 +4,10 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
+#import "PLANetworkerProtocol.h"
 
 @protocol PLAWebAPIModelProtocol <NSObject>
-- (void)updateWithResponse:(id)response userInfo:(NSDictionary *)userInfo;
+- (void)updateWithResponse:(id)response userInfo:(NSDictionary *)userInfo error:(NSError **)error;
 - (void)updateFailureWithError:(NSError *)error;
++ (NSObject<PLANetworkerProtocol> *)networker;
 @end

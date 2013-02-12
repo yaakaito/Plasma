@@ -9,5 +9,5 @@
 
 
 @interface PLAResponseParser : NSValueTransformer
-- (NSDictionary *)parseResponse:(id)response;
+- (NSDictionary *)parseResponse:(id)response userInfo:(NSDictionary *)userInfo error:(NSError **)error;
 @end

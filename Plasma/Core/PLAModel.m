@@ -28,6 +28,10 @@
     return self;
 }
 
+- (void)updateWithDictionary:(NSDictionary *)dictionary {
+    [self setMappedValuesFormDictionary:dictionary];
+}
+
 //TODO: Rename
 - (void)setMappedValuesFormDictionary:(NSDictionary *)dictionary {
 
@@ -63,4 +67,5 @@
 
     return YES;
 }
+
 @end

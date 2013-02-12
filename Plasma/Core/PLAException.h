@@ -10,4 +10,5 @@
 
 @interface PLAException : NSException
 + (instancetype)plasmaModelListNotSetListedModelClassExceptionWithClass:(Class)clazz;
++ (instancetype)plasmaWebModelNetworkerUnknownExceptionWithClass:(Class)clazz;
 @end
