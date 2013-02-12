@@ -62,14 +62,14 @@ NSString *kPLAModelReloadFailure = @"ReloadFailure";
     }
     [self updateWithDictionary:parsedResponse];
     
-    [self _notify:[self.class notificationNames][kPLAModelReloadSuccess] Error:*error];
+    [self _notify:[self.class notificationNames][kPLAModelReloadSuccess] error:*error];
 }
 
 - (void)updateFailureWithError:(NSError *)error {
-    [self _notify:[self.class notificationNames][kPLAModelReloadFailure] Error:error];
+    [self _notify:[self.class notificationNames][kPLAModelReloadFailure] error:error];
 }
 
-- (void)_notify:(NSString *)notification Error:(NSError *)error {
+- (void)_notify:(NSString *)notification error:(NSError *)error {
     __weak id that = self;
     self._callback(that, error);
     if ([self.class useNotification]) {
