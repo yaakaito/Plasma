@@ -18,13 +18,12 @@
     NSObject<PLANetworkerProtocol> *netwoker = [source.class networker];
 
     __weak PLANetworking *that = self;
-    [netwoker networking:that
-         startNetworking:^(id response, NSDictionary * userInfo) {
-             [that sourceUpdateWithResponse:response userInfo:userInfo];
-         }
-         failureCallback:^(NSError * error) {
-             [that sourceUpdateFailureWithError:error];
-         }];
+    [netwoker startNetworkWithURL:source.resourceURL
+                  successCallback:^(id response, NSDictionary *userInfo) {
+                      [that sourceUpdateWithResponse:response userInfo:userInfo];
+                  } failureCallback:^(NSError *error) {
+                      [that sourceUpdateFailureWithError:error];
+                  }];
 }
 
 - (void)sourceUpdateWithResponse:(id)response userInfo:(NSDictionary *)userInfo {

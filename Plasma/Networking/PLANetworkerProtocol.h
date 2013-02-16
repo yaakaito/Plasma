@@ -10,7 +10,7 @@ typedef void (^PLANetworkerFailureCallbackBlock)(NSError *error);
 @class PLANetworking;
 
 @protocol PLANetworkerProtocol<NSObject>
-- (void)networking:(PLANetworking *)networking
-   startNetworking:(PLANetworkerSuccessCallbackBlock)successCallback
-   failureCallback:(PLANetworkerFailureCallbackBlock)failureCallback;
+- (void)startNetworkWithURL:(NSURL *)sourceURL
+            successCallback:(PLANetworkerSuccessCallbackBlock)successCallback
+            failureCallback:(PLANetworkerFailureCallbackBlock)failureCallback;
 @end

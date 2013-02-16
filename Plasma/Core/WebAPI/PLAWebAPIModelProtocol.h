@@ -9,5 +9,6 @@
 @protocol PLAWebAPIModelProtocol <NSObject>
 - (void)updateWithResponse:(id)response userInfo:(NSDictionary *)userInfo error:(NSError **)error;
 - (void)updateFailureWithError:(NSError *)error;
+- (NSURL *)resourceURL;
 + (NSObject<PLANetworkerProtocol> *)networker;
 @end

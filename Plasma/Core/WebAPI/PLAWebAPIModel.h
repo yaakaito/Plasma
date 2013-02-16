@@ -17,6 +17,9 @@ extern NSString *kPLAModelReloadFailure;
 
 
 @interface PLAWebAPIModel : PLAModel <PLAWebAPIModelProtocol>
+
+@property (nonatomic, strong) NSURL *resourceURL;
+
 + (id)modelWithResourceURL:(NSURL *)url;
 - (id)initWithResourceURL:(NSURL *)url;
 - (void)reloadModel;

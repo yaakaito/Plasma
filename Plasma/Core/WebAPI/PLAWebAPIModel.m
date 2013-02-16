@@ -15,7 +15,6 @@ NSString *kPLAModelReloadSuccess = @"ReloadSuccess";
 NSString *kPLAModelReloadFailure = @"ReloadFailure";
 
 @interface PLAWebAPIModel ()
-@property (nonatomic, strong) NSURL *_resourceURL;
 @property (nonatomic, strong) PLAWebAPIModelCallbackBlock _callback;
 @property (nonatomic, strong) PLANetworking *_networking;
 @end
@@ -31,9 +30,9 @@ NSString *kPLAModelReloadFailure = @"ReloadFailure";
         return nil;
     }
     
-    self._resourceURL = url;
+    self.resourceURL = url;
     self._networking = [[PLANetworking alloc] init];
-    self._networking.url = url;
+    self._networking.source = self;
     
     return self;
 }
