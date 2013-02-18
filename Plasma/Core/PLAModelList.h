@@ -9,7 +9,9 @@
 
 
 @interface PLAModelList : NSObject
+
 + (id)modelListWithArray:(NSArray *)array;
 + (Class)listedModelClass;
-- (NSArray *)array;
+- (void)updateWithArray:(NSArray *)array;
+- (NSArray *)models;
 @end

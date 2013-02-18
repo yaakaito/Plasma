@@ -10,6 +10,7 @@
 #import "PLAModel.h"
 #import "Overline.h"
 
+
 @interface PLAModelList ()
 @property (nonatomic, strong) NSMutableArray *models;
 @end
@@ -38,6 +39,10 @@
     return self;
 }
 
+- (void)updateWithArray:(NSArray *)array{
+    [self createModelsFromArray:array];
+}
+
 - (void)createModelsFromArray:(NSArray *)array {
     self.models =[NSMutableArray arrayWithArray:[self.class modelsFormArray:array
                                                                       class:[self.class listedModelClass]]];
@@ -62,7 +67,7 @@
     return nil;
 }
 
-- (NSArray *)array {
+- (NSArray *)models {
     return [NSArray arrayWithArray:self.models];
 }
 
