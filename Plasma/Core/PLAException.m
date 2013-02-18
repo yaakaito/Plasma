@@ -17,9 +17,4 @@
                              userInfo:nil];
 }
 
-+ (instancetype)plasmaWebModelNetworkerUnknownExceptionWithClass:(Class)clazz {
-    return [[self alloc] initWithName:@"PLASMAWebModelNetwokerUnknownException"
-                               reason:[NSString stringWithFormat:@"*** Plasma Exception: Not overrided `networkerClass` on %@", NSStringFromClass(clazz)]
-                             userInfo:nil];    
-}
 @end
