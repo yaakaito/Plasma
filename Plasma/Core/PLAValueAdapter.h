@@ -6,8 +6,8 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import "PLAValueTransformer.h"
 
 @interface PLAValueAdapter : NSObject
-+ (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject;
++ (id)valueWithDictionary:(NSDictionary *)dictionary path:(NSString *)path transformer:(PLAValueTransformer *)transformer;
 @end

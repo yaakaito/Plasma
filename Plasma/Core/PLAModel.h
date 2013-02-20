@@ -6,10 +6,10 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import "PLAMappingTable.h"
 
 @interface PLAModel : NSObject
 + (id)modelWithDictionary:(NSDictionary *)dictionary;
-+ (NSDictionary *)propMapping; // TODO: Rename
++ (PLAMappingTable *)propertiesMappingTable;
 - (void)updateWithDictionary:(NSDictionary *)dictionary;
 @end

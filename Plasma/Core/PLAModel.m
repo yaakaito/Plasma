@@ -35,14 +35,15 @@
 //TODO: Rename
 - (void)setMappedValuesFormDictionary:(NSDictionary *)dictionary {
 
-    [[self.class propMapping] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [self setValue:[PLAValueAdapter valueWithDictionary:dictionary andKeyObject:obj]
-                forKey:key];
+    [[self.class propertiesMappingTable] enumeratePropertisAndPathsAndTansformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
+        [self setValue:[PLAValueAdapter valueWithDictionary:dictionary path:path transformer:transformer]
+                forKey:property];
     }];
+
 
 }
 
-+ (NSDictionary *)propMapping {
++ (NSDictionary *)propertiesMappingTable {
     return @{};
 }
 
@@ -55,7 +56,7 @@
         return NO;
     }
 
-    for (NSString *property in [[self.class propMapping] allKeys]) {
+    for (NSString *property in [[self.class propertiesMappingTable] allProperties]) {
         id left  = [self valueForKey:property];
         id right = [model valueForKey:property];
 

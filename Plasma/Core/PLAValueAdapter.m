@@ -11,16 +11,13 @@
 #import "Overline.h"
 
 
-
 @implementation PLAValueAdapter
 
-+ (id)valueWithDictionary:(NSDictionary *)dictionary andKeyObject:(NSObject *)keyObject {
-    if ([keyObject isKindOfClass:[PLAValueTransformer class]]) {
-        PLAValueTransformer *transformer = (PLAValueTransformer *)keyObject;
++ (id)valueWithDictionary:(NSDictionary *)dictionary path:(NSString *)path transformer:(PLAValueTransformer *)transformer {
+    if (transformer) {
         return [transformer transformedValueWithDictionary:dictionary];
     }
     else {
-        NSString *path = (NSString *)keyObject;
         return [dictionary objectForPath:path];
     }
 }
