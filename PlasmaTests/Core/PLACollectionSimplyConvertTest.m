@@ -46,17 +46,17 @@
 }
 
 - (void)testCanSetStringValue {
-    assertThat(((SimpleModel *) collection.models[0]).string, equalTo(@"hoge"));
-    assertThat(((SimpleModel *) collection.models[1]).string, equalTo(@"fuga"));
+    assertThat(((SimpleModel *) [collection modelAtIndex:0]).string, equalTo(@"hoge"));
+    assertThat(((SimpleModel *) [collection modelAtIndex:1]).string, equalTo(@"fuga"));
 }
 
 - (void)testCanSetNumberValue {
-    assertThat(((SimpleModel *) collection.models[0]).number, equalTo(@10));
-    assertThat(((SimpleModel *) collection.models[1]).number, equalTo(@20));
+    assertThat(((SimpleModel *) [collection modelAtIndex:0]).number, equalTo(@10));
+    assertThat(((SimpleModel *) [collection modelAtIndex:1]).number, equalTo(@20));
 }
 
 - (void)testCanSetPresetURLValue {
-    assertThat([((SimpleModel *) collection.models[0]).url host], equalTo(@"example.com"));
-    assertThat([((SimpleModel *) collection.models[1]).url host], equalTo(@"example2.com"));
+    assertThat([((SimpleModel *) [collection modelAtIndex:0]).url host], equalTo(@"example.com"));
+    assertThat([((SimpleModel *) [collection modelAtIndex:1]).url host], equalTo(@"example2.com"));
 }
 @end
