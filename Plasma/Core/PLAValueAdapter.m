@@ -15,7 +15,7 @@
 
 + (id)valueWithDictionary:(NSDictionary *)dictionary path:(NSString *)path transformer:(PLAValueTransformer *)transformer {
     if (transformer) {
-        return [transformer transformedValueWithDictionary:dictionary];
+        return [transformer transformedValue:[dictionary objectForPath:path]];
     }
     else {
         return [dictionary objectForPath:path];

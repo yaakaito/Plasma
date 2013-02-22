@@ -34,23 +34,20 @@
 
 - (void)testAdaptString
 {
-    NSString *key = @"string";
-    NSString *value  = [PLAValueAdapter valueWithDictionary:self.testDictionary andKeyObject:key];
+    NSString *value = [PLAValueAdapter valueWithDictionary:self.testDictionary path:@"string" transformer:nil];
     assertThat(value, equalTo(@"stringObject"));
 }
 
 - (void)testAdaptNumber
 {
-    NSString *key = @"number";
-    NSNumber *value  = [PLAValueAdapter valueWithDictionary:self.testDictionary andKeyObject:key];
-    assertThat(value, equalTo(@1));
+NSNumber *value = [PLAValueAdapter valueWithDictionary:self.testDictionary path:@"number" transformer:nil];
+assertThat(value, equalTo(@1));
 }
 
 - (void)testAdaptTransformer
 {
-    NSString *key = @"url";
-    NSURL *url = [PLAValueAdapter valueWithDictionary:self.testDictionary andKeyObject:PLA_URL(key)];
-    assertThat([url class], equalTo([NSURL class]));
+NSURL *url = [PLAValueAdapter valueWithDictionary:self.testDictionary path:@"url" transformer:[[PLAURLTransformer alloc] init]];
+assertThat([url class], equalTo([NSURL class]));
 }
 
 @end
