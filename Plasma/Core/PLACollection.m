@@ -5,17 +5,17 @@
 //
 
 
-#import "PLAModelList.h"
+#import "PLACollection.h"
 #import "PLAException.h"
 #import "PLAModel.h"
 #import "Overline.h"
 
 
-@interface PLAModelList ()
+@interface PLACollection ()
 @property (nonatomic, strong) NSMutableArray *models;
 @end
 
-@implementation PLAModelList {
+@implementation PLACollection {
 
 }
 
@@ -71,7 +71,7 @@
     return [NSArray arrayWithArray:self.models];
 }
 
-- (BOOL)isEqual:(PLAModelList *)modelList {
+- (BOOL)isEqual:(PLACollection *)modelList {
     if (self == modelList) {
         return YES;
     }

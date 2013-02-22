@@ -12,7 +12,7 @@
 #import "SimpleModelList.h"
 #import "SimpleModel.h"
 
-@interface PLAModelList ()
+@interface PLACollection ()
 @property (nonatomic, strong) NSMutableArray *models;
 @end
 

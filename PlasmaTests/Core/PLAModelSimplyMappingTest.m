@@ -10,7 +10,7 @@
 #import <OCHamcrest/OCHamcrest.h>
 
 #import "SimpleModel.h"
-#import "PLAModelList.h"
+#import "PLACollection.h"
 
 @interface PLAModelSimplyMappingTest : SenTestCase
 {

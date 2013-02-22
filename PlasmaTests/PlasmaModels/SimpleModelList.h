@@ -6,8 +6,8 @@
 
 
 #import <Foundation/Foundation.h>
-#import "PLAModelList.h"
+#import "PLACollection.h"
 
 
-@interface SimpleModelList : PLAModelList
+@interface SimpleModelList : PLACollection
 @end

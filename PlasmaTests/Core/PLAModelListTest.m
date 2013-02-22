@@ -9,12 +9,12 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "PLAModelList.h"
+#import "PLACollection.h"
 #import "SimpleModel.h"
 #import "Overline.h"
 
 
-@interface PLAModelList()
+@interface PLACollection ()
 + (NSArray *)modelsFormArray:(NSArray *)array class:(Class)clazz;
 + (BOOL)isValidModelClass:(Class)clazz;
 @end
@@ -41,7 +41,7 @@
         }
     ];
 
-    NSArray *actual = [PLAModelList modelsFormArray:ary class:[SimpleModel class]];
+    NSArray *actual = [PLACollection modelsFormArray:ary class:[SimpleModel class]];
 
     [actual enumerateObjectsUsingBlock:^(SimpleModel * model, NSUInteger idx, BOOL *stop) {
         assertThat(model.stringProp, equalTo(@"hoge"));
@@ -53,8 +53,8 @@
 }
 
 - (void)testIsValidModelClass {
-    assertThatBool([PLAModelList isValidModelClass:[SimpleModel class]], equalToBool(YES));
-    assertThatBool([PLAModelList isValidModelClass:[NSObject class]], equalToBool(NO));
+    assertThatBool([PLACollection isValidModelClass:[SimpleModel class]], equalToBool(YES));
+    assertThatBool([PLACollection isValidModelClass:[NSObject class]], equalToBool(NO));
 }
 
 @end

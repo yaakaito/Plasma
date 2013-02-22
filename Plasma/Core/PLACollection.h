@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface PLAModelList : NSObject
+@interface PLACollection : NSObject
 
 + (id)modelListWithArray:(NSArray *)array;
 + (Class)listedModelClass;

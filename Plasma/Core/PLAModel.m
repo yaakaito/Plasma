@@ -34,7 +34,7 @@
 
 - (void)setValuesFormDictionary:(NSDictionary *)dictionary {
 
-    [[self.class propertiesMappingTable] enumeratePropertisAndPathsAndTansformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
+    [[self.class propertiesMappingTable] enumeratePropertiesAndPathsAndTransformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
         [self setValue:[PLAValueAdapter valueWithDictionary:dictionary path:path transformer:transformer]
                 forKey:property];
     }];
