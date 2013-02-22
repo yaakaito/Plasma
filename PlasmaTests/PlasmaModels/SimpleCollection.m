@@ -5,11 +5,11 @@
 //
 
 
-#import "SimpleModelList.h"
+#import "SimpleCollection.h"
 #import "SimpleModel.h"
 
 
-@implementation SimpleModelList {
+@implementation SimpleCollection {
 
 }
 

@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "SimpleModelList.h"
+#import "SimpleCollection.h"
 
 @interface PLAModelListEqualsTest : SenTestCase
 {
@@ -34,32 +34,32 @@
             }
     ];
 
-    SimpleModelList *left  = [SimpleModelList modelListWithArray:ary];
-    SimpleModelList *right = [SimpleModelList modelListWithArray:ary];
+    SimpleCollection *left  = [SimpleCollection modelListWithArray:ary];
+    SimpleCollection *right = [SimpleCollection modelListWithArray:ary];
 
     assertThat(left, equalTo(right));
 
 }
 
 - (void)testEqualsNotEqualsLength {
-    SimpleModelList *left  = [SimpleModelList modelListWithArray:@[
+    SimpleCollection *left  = [SimpleCollection modelListWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             },
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             }
     ]];
 
-    SimpleModelList *right = [SimpleModelList modelListWithArray:@[
+    SimpleCollection *right = [SimpleCollection modelListWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             }
     ]];
 
@@ -68,19 +68,19 @@
 
 
 - (void)testEqualsHasNotEqualsObject {
-    SimpleModelList *left  = [SimpleModelList modelListWithArray:@[
+    SimpleCollection *left  = [SimpleCollection modelListWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             }
     ]];
 
-    SimpleModelList *right = [SimpleModelList modelListWithArray:@[
+    SimpleCollection *right = [SimpleCollection modelListWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @20,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             }
     ]];
 

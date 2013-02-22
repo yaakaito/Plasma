@@ -7,19 +7,18 @@
 
 #import "SimpleModel.h"
 #import "PLAURLTransformer.h"
-#import "SimpleModelListTransformer.h"
+#import "SimpleCollectionTransformer.h"
 
+@implementation SimpleModel
 
-@implementation SimpleModel {
-
++ (PLAMappingTable *)propertiesMappingTable {
+    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{
+            @"string": @"string",
+            @"number": @"number",
+    }];
+    [table addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
+    [table addProperty:@"collection" path:@"collection" transformer:[[SimpleCollectionTransformer alloc] init]];
+    return table;
 }
 
-+ (NSDictionary *)propMapping {
-    return @{
-            @"stringProp": @"stringKey",
-            @"numberProp": @"numberKey",
-            @"urlProp"   : PLA_URL(@"urlKey"),
-            @"simpleModelListProp" : SIMPLE_LIST(@"models")
-    };
-}
 @end

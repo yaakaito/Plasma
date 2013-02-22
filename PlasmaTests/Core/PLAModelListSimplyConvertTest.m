@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "SimpleModelList.h"
+#import "SimpleCollection.h"
 #import "SimpleModel.h"
 
 @interface PLACollection ()
@@ -18,7 +18,7 @@
 
 @interface PLAModelListSimplyConvertTest : SenTestCase
 {
-     SimpleModelList *modelList;
+     SimpleCollection *modelList;
 }
 @end
 
@@ -27,16 +27,16 @@
 
 - (void)setUp {
     // Run before each test method
-    modelList = [SimpleModelList modelListWithArray:@[
+    modelList = [SimpleCollection modelListWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"urlKey" : @"http://example.com/"
             },
             @{
                     @"stringKey" : @"fuga",
                     @"numberKey" : @20,
-                    @"urlKey"    : @"http://example2.com/"
+                    @"urlKey" : @"http://example2.com/"
             }
     ]];
 }

@@ -5,9 +5,7 @@
 //
 
 
-#import <Foundation/Foundation.h>
-#import "PLACollection.h"
+#import "PLAValueTransformer.h"
 
-
-@interface SimpleModelList : PLACollection
+@interface SimpleCollectionTransformer : PLAValueTransformer
 @end
