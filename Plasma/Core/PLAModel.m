@@ -23,28 +23,25 @@
         return nil;
     }
 
-    [self setMappedValuesFormDictionary:dictionary];
+    [self setValuesFormDictionary:dictionary];
 
     return self;
 }
 
 - (void)updateWithDictionary:(NSDictionary *)dictionary {
-    [self setMappedValuesFormDictionary:dictionary];
+    [self setValuesFormDictionary:dictionary];
 }
 
-//TODO: Rename
-- (void)setMappedValuesFormDictionary:(NSDictionary *)dictionary {
+- (void)setValuesFormDictionary:(NSDictionary *)dictionary {
 
     [[self.class propertiesMappingTable] enumeratePropertisAndPathsAndTansformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
         [self setValue:[PLAValueAdapter valueWithDictionary:dictionary path:path transformer:transformer]
                 forKey:property];
     }];
-
-
 }
 
-+ (NSDictionary *)propertiesMappingTable {
-    return @{};
++ (PLAMappingTable *)propertiesMappingTable {
+    return [PLAMappingTable mappingTableWithDictionary:@{}];
 }
 
 - (BOOL)isEqual:(PLAModel *)model {
