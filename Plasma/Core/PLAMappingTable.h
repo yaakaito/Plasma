@@ -10,10 +10,10 @@
 #import "PLAValueTransformer.h"
 
 @interface PLAMappingTable : NSObject
-+ (instancetype)mappingTableWithDictionary:(NSDictionary *)dictioanry;
++ (instancetype)mappingTableWithDictionary:(NSDictionary *)dictionary;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (void)addProperty:(NSString *)propertyName path:(NSString *)path;
 - (void)addProperty:(NSString *)propertyName path:(NSString *)path transformer:(PLAValueTransformer *)transformer;
-- (void)enumeratePropertisAndPathsAndTansformersUsingBlock:(void (^)(NSString *property, NSString *path, PLAValueTransformer *transformer))block;
+- (void)enumeratePropertiesAndPathsAndTransformersUsingBlock:(void (^)(NSString *property, NSString *path, PLAValueTransformer *transformer))block;
 - (NSArray *)allProperties;
 @end
