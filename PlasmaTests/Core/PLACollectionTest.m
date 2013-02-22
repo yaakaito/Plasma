@@ -1,5 +1,5 @@
 //
-//  Plasma - PLAModelListTest.m
+//  Plasma - PLACollectionTest.m
 //  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 //  Created by: yaakaito
@@ -19,13 +19,13 @@
 + (BOOL)isValidModelClass:(Class)clazz;
 @end
 
-@interface PLAModelListTest : SenTestCase
+@interface PLACollectionTest : SenTestCase
 {
     
 }
 @end
 
-@implementation PLAModelListTest
+@implementation PLACollectionTest
 
 - (void)testModelsFormArray {
     NSArray *ary = @[
