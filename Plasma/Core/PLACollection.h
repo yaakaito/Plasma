@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class PLAModel;
 
 @interface PLACollection : NSObject
 
@@ -14,4 +15,9 @@
 + (Class)modelClass;
 - (void)updateWithArray:(NSArray *)array;
 - (NSArray *)models;
+
+- (void)addModel:(PLAModel *)model;
+- (void)addModelsFromCollection:(PLACollection *)collection;
+- (PLAModel *)modelAtIndex:(NSUInteger)index;
+- (void)enumerateModelsUsingBlock:(void (^)(PLAModel *model))block;
 @end

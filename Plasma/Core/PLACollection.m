@@ -92,4 +92,22 @@
 
     return YES;
 }
+
+- (void)addModel:(PLAModel *)model {
+    [self._models addObject:model];
+}
+
+- (void)addModelsFromCollection:(PLACollection *)collection {
+    [self._models addObjectsFromArray:collection._models];
+}
+
+- (PLAModel *)modelAtIndex:(NSUInteger)index {
+    return [self._models objectAtIndex:index];
+}
+
+- (void)enumerateModelsUsingBlock:(void (^)(PLAModel *))block {
+    [self._models enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        block(obj);
+    }];
+}
 @end
