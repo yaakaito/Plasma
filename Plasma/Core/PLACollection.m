@@ -12,7 +12,7 @@
 
 
 @interface PLACollection ()
-@property (nonatomic, strong) NSMutableArray *models;
+@property (nonatomic, strong) NSMutableArray *_models;
 @end
 
 @implementation PLACollection {
@@ -43,15 +43,14 @@
     [self createModelsFromArray:array];
 }
 
-- (void)createModelsFromArray:(NSArray *)array {
-    self.models =[NSMutableArray arrayWithArray:[self.class modelsFormArray:array
-                                                                      class:[self.class modelClass]]];
++ (NSArray *)modelsFormArray:(NSArray *)array class:(Class)clazz {
+    return [array mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
+        return [clazz modelWithDictionary:obj];
+    }];
 }
 
-+ (NSArray *)modelsFormArray:(NSArray *)array class:(Class)clazz {
-   return [array mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
-       return [clazz modelWithDictionary:obj];
-   }];
+- (void)createModelsFromArray:(NSArray *)array {
+    self._models =[NSMutableArray arrayWithArray:[self.class modelsFormArray:array class:[self.class modelClass]]];
 }
 
 + (BOOL)isValidModelClass:(Class)clazz {
@@ -68,7 +67,7 @@
 }
 
 - (NSArray *)models {
-    return [NSArray arrayWithArray:self.models];
+    return [NSArray arrayWithArray:self._models];
 }
 
 - (BOOL)isEqual:(PLACollection *)modelList {

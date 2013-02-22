@@ -1,5 +1,5 @@
 //
-//  Plasma - PLAModelListEqualsTest.m
+//  Plasma - PLACollectionEqualsTest.m
 //  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 //  Created by: kazuma.ukyo
@@ -11,26 +11,26 @@
 
 #import "SimpleCollection.h"
 
-@interface PLAModelListEqualsTest : SenTestCase
+@interface PLACollectionEqualsTest : SenTestCase
 {
     
 }
 @end
 
-@implementation PLAModelListEqualsTest
+@implementation PLACollectionEqualsTest
 
 
 - (void)testEqualsAllObjects {
     NSArray *ary = @[
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url"    : @"http://example.com/"
             },
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey"    : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url"    : @"http://example.com/"
             }
     ];
 
@@ -44,22 +44,22 @@
 - (void)testEqualsNotEqualsLength {
     SimpleCollection *left  = [SimpleCollection collectionWithArray:@[
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey" : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url" : @"http://example.com/"
             },
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey" : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url" : @"http://example.com/"
             }
     ]];
 
     SimpleCollection *right = [SimpleCollection collectionWithArray:@[
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey" : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url" : @"http://example.com/"
             }
     ]];
 
@@ -70,17 +70,17 @@
 - (void)testEqualsHasNotEqualsObject {
     SimpleCollection *left  = [SimpleCollection collectionWithArray:@[
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @10,
-                    @"urlKey" : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @10,
+                    @"url" : @"http://example.com/"
             }
     ]];
 
     SimpleCollection *right = [SimpleCollection collectionWithArray:@[
             @{
-                    @"stringKey" : @"hoge",
-                    @"numberKey" : @20,
-                    @"urlKey" : @"http://example.com/"
+                    @"string" : @"hoge",
+                    @"number" : @20,
+                    @"url" : @"http://example.com/"
             }
     ]];
 

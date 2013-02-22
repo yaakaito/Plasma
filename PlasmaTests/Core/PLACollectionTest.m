@@ -30,23 +30,23 @@
 - (void)testModelsFormArray {
     NSArray *ary = @[
         @{
-                @"stringKey" : @"hoge",
-                @"numberKey" : @10,
-                @"urlKey"    : @"http://example.com/"
+                @"string" : @"hoge",
+                @"number" : @10,
+                @"url"    : @"http://example.com/"
         },
         @{
-                @"stringKey" : @"hoge",
-                @"numberKey" : @10,
-                @"urlKey"    : @"http://example.com/"
+                @"string" : @"hoge",
+                @"number" : @10,
+                @"url"    : @"http://example.com/"
         }
     ];
 
     NSArray *actual = [PLACollection modelsFormArray:ary class:[SimpleModel class]];
 
     [actual enumerateObjectsUsingBlock:^(SimpleModel * model, NSUInteger idx, BOOL *stop) {
-        assertThat(model.stringProp, equalTo(@"hoge"));
-        assertThat(model.numberProp, equalTo(@10));
-        assertThat([model.urlProp scheme], equalTo(@"http"));
+        assertThat(model.string, equalTo(@"hoge"));
+        assertThat(model.number, equalTo(@10));
+        assertThat([model.url scheme], equalTo(@"http"));
     }];
 
     assertThatInteger(actual.count, equalToInteger(2));

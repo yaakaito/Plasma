@@ -23,35 +23,35 @@
 
 - (void)setUp {
     model = [SimpleModel modelWithDictionary:@{
-            @"stringKey" : @"hoge",
-            @"numberKey" : @10,
-            @"urlKey"    : @"http://example.com/",
-            @"models"    : @[
+            @"string"       : @"hoge",
+            @"number"       : @10,
+            @"url"          : @"http://example.com/",
+            @"colletion"    : @[
                     @{
-                            @"stringKey" : @"hoge",
-                            @"numberKey" : @10,
-                            @"urlKey"    : @"http://example.com/"
+                            @"string" : @"hoge",
+                            @"number" : @10,
+                            @"url"    : @"http://example.com/"
                     },
                     @{
-                            @"stringKey" : @"fuga",
-                            @"numberKey" : @20,
-                            @"urlKey"    : @"http://example2.com/"
+                            @"string" : @"fuga",
+                            @"number" : @20,
+                            @"url"    : @"http://example2.com/"
                     }
             ]
     }];
 }
 
 - (void)testCanSetStringValue {
-    assertThat(model.stringProp, equalTo(@"hoge"));
+    assertThat(model.string, equalTo(@"hoge"));
 }
 
 - (void)testCanSetNumberValue {
-    assertThat(model.numberProp, equalTo(@10));
+    assertThat(model.number, equalTo(@10));
 }
 
 - (void)testCanSetPresetURLValue {
-    assertThat([model.urlProp class], equalTo([NSURL class]));
-    assertThat([model.urlProp scheme], equalTo(@"http"));
+    assertThat([model.url class], equalTo([NSURL class]));
+    assertThat([model.url scheme], equalTo(@"http"));
 }
 
 - (void)testCanSetModelListValue {
