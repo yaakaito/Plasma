@@ -12,8 +12,8 @@
 
 }
 + (instancetype)plasmaModelListNotSetListedModelClassExceptionWithClass:(Class)clazz {
-    return [[self alloc] initWithName:@"PLASMANotSetListedModelClassException"
-                               reason:[NSString stringWithFormat:@"*** Plasma Exception: Not overrided `listedModelClass` on %@", NSStringFromClass(clazz)]
+    return [[self alloc] initWithName:@"PLASMANotSetCollectionModelClassException"
+                               reason:[NSString stringWithFormat:@"*** Plasma Exception: Not overrided `modelClass` on %@", NSStringFromClass(clazz)]
                              userInfo:nil];
 }
 

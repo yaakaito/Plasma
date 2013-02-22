@@ -13,7 +13,7 @@
 
 }
 
-+ (Class)listedModelClass {
++ (Class)modelClass {
     return [SimpleModel class];
 }
 @end

@@ -34,15 +34,15 @@
             }
     ];
 
-    SimpleCollection *left  = [SimpleCollection modelListWithArray:ary];
-    SimpleCollection *right = [SimpleCollection modelListWithArray:ary];
+    SimpleCollection *left  = [SimpleCollection collectionWithArray:ary];
+    SimpleCollection *right = [SimpleCollection collectionWithArray:ary];
 
     assertThat(left, equalTo(right));
 
 }
 
 - (void)testEqualsNotEqualsLength {
-    SimpleCollection *left  = [SimpleCollection modelListWithArray:@[
+    SimpleCollection *left  = [SimpleCollection collectionWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
@@ -55,7 +55,7 @@
             }
     ]];
 
-    SimpleCollection *right = [SimpleCollection modelListWithArray:@[
+    SimpleCollection *right = [SimpleCollection collectionWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
@@ -68,7 +68,7 @@
 
 
 - (void)testEqualsHasNotEqualsObject {
-    SimpleCollection *left  = [SimpleCollection modelListWithArray:@[
+    SimpleCollection *left  = [SimpleCollection collectionWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,
@@ -76,7 +76,7 @@
             }
     ]];
 
-    SimpleCollection *right = [SimpleCollection modelListWithArray:@[
+    SimpleCollection *right = [SimpleCollection collectionWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @20,

@@ -17,6 +17,6 @@
 }
 
 + (id)transformedValue:(id)value {
-    return [SimpleCollection modelListWithArray:value];
+    return [SimpleCollection collectionWithArray:value];
 }
 @end

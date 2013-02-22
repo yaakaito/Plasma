@@ -27,7 +27,7 @@
 
 - (void)setUp {
     // Run before each test method
-    modelList = [SimpleCollection modelListWithArray:@[
+    modelList = [SimpleCollection collectionWithArray:@[
             @{
                     @"stringKey" : @"hoge",
                     @"numberKey" : @10,

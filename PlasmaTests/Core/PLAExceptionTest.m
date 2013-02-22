@@ -23,7 +23,7 @@
 - (void)testModelListNoSetListedModelClassException {
     PLAException *exp = [PLAException plasmaModelListNotSetListedModelClassExceptionWithClass:[self class]];
     assertThat(exp.name, equalTo(@"PLASMANotSetListedModelClassException"));
-    assertThat(exp.reason, equalTo(@"*** Plasma Exception: Not overrided `listedModelClass` on PLAExceptionTest"));
+    assertThat(exp.reason, equalTo(@"*** Plasma Exception: Not overrided `modelClass` on PLAExceptionTest"));
 }
 
 @end

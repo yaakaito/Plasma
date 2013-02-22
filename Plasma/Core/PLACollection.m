@@ -19,7 +19,7 @@
 
 }
 
-+ (id)modelListWithArray:(NSArray *)array {
++ (id)collectionWithArray:(NSArray *)array {
     return [[self alloc] initWithArray:array];
 }
 
@@ -29,7 +29,7 @@
         return nil;
     }
 
-    if (![self.class isValidModelClass:[self.class listedModelClass]]) {
+    if (![self.class isValidModelClass:[self.class modelClass]]) {
         // TODO: Exception
         return nil;
     }
@@ -45,7 +45,7 @@
 
 - (void)createModelsFromArray:(NSArray *)array {
     self.models =[NSMutableArray arrayWithArray:[self.class modelsFormArray:array
-                                                                      class:[self.class listedModelClass]]];
+                                                                      class:[self.class modelClass]]];
 }
 
 + (NSArray *)modelsFormArray:(NSArray *)array class:(Class)clazz {
@@ -58,7 +58,7 @@
     return [[[clazz alloc] init] isKindOfClass:[PLAModel class]];
 }
 
-+ (Class)listedModelClass {
++ (Class)modelClass {
     PLAException *exception = [PLAException plasmaModelListNotSetListedModelClassExceptionWithClass:[self class]];
     NSLog(@"%@", exception.reason);
     #if DEBUG

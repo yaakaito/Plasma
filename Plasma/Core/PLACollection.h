@@ -10,8 +10,8 @@
 
 @interface PLACollection : NSObject
 
-+ (id)modelListWithArray:(NSArray *)array;
-+ (Class)listedModelClass;
++ (id)collectionWithArray:(NSArray *)array;
++ (Class)modelClass;
 - (void)updateWithArray:(NSArray *)array;
 - (NSArray *)models;
 @end
