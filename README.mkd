@@ -17,12 +17,12 @@ simply model framework. Plasma provide Model and Collection from NSDictionary (J
 
 @implementation SimpleModel
 + (PLAMappingTable *)propertiesMappingTable {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{
+    PLAMappingTable *mapping = [PLAMappingTable mappingTableWithDictionary:@{
             @"string": @"string",
             @"number": @"number",
     }];
-    [table addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
-    return table;
+    [mapping addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
+    return mapping;
 }
 @end
 ```

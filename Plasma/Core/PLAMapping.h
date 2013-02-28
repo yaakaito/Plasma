@@ -1,5 +1,5 @@
 //
-//  PLAMappingTable.h
+//  PLAMapping.h
 //  octone
 //
 //  Created by yaakaito on 13/02/18.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "PLAValueTransformer.h"
 
-@interface PLAMappingTable : NSObject
+@interface PLAMapping : NSObject
 + (instancetype)mappingTableWithDictionary:(NSDictionary *)dictionary;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (void)addProperty:(NSString *)propertyName path:(NSString *)path;

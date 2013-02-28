@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "PLAMappingTable.h"
+#import "PLAMapping.h"
 #import "PLAValueTransformer.h"
 
 @interface PLAMappingTableTest : SenTestCase
@@ -29,14 +29,14 @@
     // Run after each test method
 }
 
-- (void)assertPropertiesIn:(PLAMappingTable *)actual expects:(NSArray *)expect
+- (void)assertPropertiesIn:(PLAMapping *)actual expects:(NSArray *)expect
 {
     assertThat([[actual allProperties] sortedArrayUsingSelector:@selector(compare:)], equalTo([expect sortedArrayUsingSelector:@selector(compare:)]));
 }
 
 - (void)testCreateWithDictionary
 {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{
+    PLAMapping *table = [PLAMapping mappingTableWithDictionary:@{
             @"a" : @"aa",
             @"b" : @"bb"
     }];
@@ -46,7 +46,7 @@
 
 - (void)testAddProperty
 {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{}];
+    PLAMapping *table = [PLAMapping mappingTableWithDictionary:@{}];
     [table addProperty:@"a" path:@"aa"];
 
     [self assertPropertiesIn:table expects:@[@"a"]];
@@ -54,7 +54,7 @@
 
 - (void)testAddPropertyAndTransformer
 {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{}];
+    PLAMapping *table = [PLAMapping mappingTableWithDictionary:@{}];
     [table addProperty:@"b" path:@"bb" transformer:[[PLAValueTransformer alloc] init]];
 
     [self assertPropertiesIn:table expects:@[@"b"]];
@@ -62,7 +62,7 @@
 
 - (void)testEnumerate
 {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{
+    PLAMapping *table = [PLAMapping mappingTableWithDictionary:@{
             @"a" : @"aa"
     }];
     [table addProperty:@"b" path:@"bb"];

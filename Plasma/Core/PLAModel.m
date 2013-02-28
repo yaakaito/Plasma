@@ -34,14 +34,14 @@
 
 - (void)setValuesFormDictionary:(NSDictionary *)dictionary {
 
-    [[self.class propertiesMappingTable] enumeratePropertiesAndPathsAndTransformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
+    [[self.class propertiesMapping] enumeratePropertiesAndPathsAndTransformersUsingBlock:^(NSString *property, NSString *path, PLAValueTransformer *transformer) {
         [self setValue:[PLAValueAdapter valueWithDictionary:dictionary path:path transformer:transformer]
                 forKey:property];
     }];
 }
 
-+ (PLAMappingTable *)propertiesMappingTable {
-    return [PLAMappingTable mappingTableWithDictionary:@{}];
++ (PLAMapping *)propertiesMapping {
+    return [PLAMapping mappingTableWithDictionary:@{}];
 }
 
 - (BOOL)isEqual:(PLAModel *)model {
@@ -53,7 +53,7 @@
         return NO;
     }
 
-    for (NSString *property in [[self.class propertiesMappingTable] allProperties]) {
+    for (NSString *property in [[self.class propertiesMapping] allProperties]) {
         id left  = [self valueForKey:property];
         id right = [model valueForKey:property];
 

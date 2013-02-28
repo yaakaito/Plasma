@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C3D50336A1BC25044C6BABE /* PLAMappingTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5E8E100E8E6F75DDE3C1 /* PLAMappingTableTest.m */; };
-		1C3D5120D8DE5C1D439DD46C /* PLAMappingTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5B929546F56FAA42D1E6 /* PLAMappingTable.h */; };
+		1C3D5120D8DE5C1D439DD46C /* PLAMapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5B929546F56FAA42D1E6 /* PLAMapping.h */; };
 		1C3D55188534445862CB2CC8 /* PLAMappingPair.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D57ED6BD13FACC9DDFC7C /* PLAMappingPair.h */; };
 		1C3D5AEFA58353AEC7C8EB77 /* PLAMappingPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D505EAEB0EEDC7FC96B87 /* PLAMappingPair.m */; };
-		1C3D5B1FEBFF92B641FC3261 /* PLAMappingTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50D484BE94393E9CC505 /* PLAMappingTable.m */; };
+		1C3D5B1FEBFF92B641FC3261 /* PLAMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50D484BE94393E9CC505 /* PLAMapping.m */; };
 		1C3D5F495C6FCFDE76644525 /* PLACollectionEqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54994CF2C6A861AD66F9 /* PLACollectionEqualsTest.m */; };
 		A4546CA721D64053A510EB93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9BA53C6F404800AB4F4304 /* libPods.a */; };
 		A9172679551A4505B1D37547 /* libPods-PlasmaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */; };
@@ -76,7 +76,7 @@
 				D0424CA7AC3487F540BA107A /* PLAURLTransformer.h in CopyFiles */,
 				D042423663A24329323E78B1 /* PLACollection.h in CopyFiles */,
 				D0424249EA4559D28B9B869C /* PLAException.h in CopyFiles */,
-				1C3D5120D8DE5C1D439DD46C /* PLAMappingTable.h in CopyFiles */,
+				1C3D5120D8DE5C1D439DD46C /* PLAMapping.h in CopyFiles */,
 				1C3D55188534445862CB2CC8 /* PLAMappingPair.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,10 +85,10 @@
 
 /* Begin PBXFileReference section */
 		1C3D505EAEB0EEDC7FC96B87 /* PLAMappingPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAMappingPair.m; sourceTree = "<group>"; };
-		1C3D50D484BE94393E9CC505 /* PLAMappingTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAMappingTable.m; sourceTree = "<group>"; };
+		1C3D50D484BE94393E9CC505 /* PLAMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAMapping.m; sourceTree = "<group>"; };
 		1C3D54994CF2C6A861AD66F9 /* PLACollectionEqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLACollectionEqualsTest.m; sourceTree = "<group>"; };
 		1C3D57ED6BD13FACC9DDFC7C /* PLAMappingPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAMappingPair.h; sourceTree = "<group>"; };
-		1C3D5B929546F56FAA42D1E6 /* PLAMappingTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAMappingTable.h; sourceTree = "<group>"; };
+		1C3D5B929546F56FAA42D1E6 /* PLAMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAMapping.h; sourceTree = "<group>"; };
 		1C3D5E8E100E8E6F75DDE3C1 /* PLAMappingTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAMappingTableTest.m; sourceTree = "<group>"; };
 		4DABB8023C674FC1ADAC73D9 /* libPods-PlasmaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlasmaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9BA53C6F404800AB4F4304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,8 +318,8 @@
 				D0424C63C1DA740A9679348A /* PLACollection.h */,
 				D04241FDDF9CD348A19C954D /* PLAException.m */,
 				D0424C5FFD74A26FE4CBBB95 /* PLAException.h */,
-				1C3D5B929546F56FAA42D1E6 /* PLAMappingTable.h */,
-				1C3D50D484BE94393E9CC505 /* PLAMappingTable.m */,
+				1C3D5B929546F56FAA42D1E6 /* PLAMapping.h */,
+				1C3D50D484BE94393E9CC505 /* PLAMapping.m */,
 				1C3D505EAEB0EEDC7FC96B87 /* PLAMappingPair.m */,
 				1C3D57ED6BD13FACC9DDFC7C /* PLAMappingPair.h */,
 			);
@@ -478,7 +478,7 @@
 				D04244E00E76FE5112226814 /* PLAURLTransformer.m in Sources */,
 				D0424899E55BADC7EE605B8D /* PLACollection.m in Sources */,
 				D0424A1945CE85C4FFAE2E8D /* PLAException.m in Sources */,
-				1C3D5B1FEBFF92B641FC3261 /* PLAMappingTable.m in Sources */,
+				1C3D5B1FEBFF92B641FC3261 /* PLAMapping.m in Sources */,
 				1C3D5AEFA58353AEC7C8EB77 /* PLAMappingPair.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

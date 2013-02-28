@@ -11,14 +11,14 @@
 
 @implementation SimpleModel
 
-+ (PLAMappingTable *)propertiesMappingTable {
-    PLAMappingTable *table = [PLAMappingTable mappingTableWithDictionary:@{
-            @"string": @"string",
-            @"number": @"number",
++ (PLAMapping *)propertiesMapping {
+    PLAMapping *mapping = [PLAMapping mappingTableWithDictionary:@{
+            @"string" : @"string",
+            @"number" : @"number",
     }];
-    [table addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
-    [table addProperty:@"collection" path:@"collection" transformer:[[SimpleCollectionTransformer alloc] init]];
-    return table;
+    [mapping addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
+    [mapping addProperty:@"collection" path:@"collection" transformer:[[SimpleCollectionTransformer alloc] init]];
+    return mapping;
 }
 
 @end

@@ -1,20 +1,20 @@
 //
-//  PLAMappingTable.m
+//  PLAMapping.m
 //  octone
 //
 //  Created by yaakaito on 13/02/18.
 //  Copyright (c) 2013年 yaakaito. All rights reserved.
 //
 
-#import "PLAMappingTable.h"
+#import "PLAMapping.h"
 #import "PLAMappingPair.h"
 #import "Overline.h"
 
-@interface PLAMappingTable ()
+@interface PLAMapping ()
 @property (nonatomic, strong) NSMutableArray *pairs;
 @end
 
-@implementation PLAMappingTable
+@implementation PLAMapping
 
 + (instancetype)mappingTableWithDictionary:(NSDictionary *)dictionary {
     return [[self alloc] initWithDictionary:dictionary];
