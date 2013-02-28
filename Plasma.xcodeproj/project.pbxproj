@@ -25,9 +25,11 @@
 		B9B0FC80169C70AB00506147 /* PlasmaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0FC7F169C70AB00506147 /* PlasmaTests.m */; };
 		B9DDB42216A07FD600A5A7AF /* libPlasma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B0FC5E169C70AB00506147 /* libPlasma.a */; };
 		D0424127696799E25A9D963F /* PLAExceptionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424B0B669724E9432B9A36 /* PLAExceptionTest.m */; };
+		D042412B16421457CA4EE984 /* PLADefaultEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424906B9E47B0F278D6A86 /* PLADefaultEngine.m */; };
 		D0424154767917713846ABCE /* PLAValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */; };
 		D042423663A24329323E78B1 /* PLACollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424C63C1DA740A9679348A /* PLACollection.h */; };
 		D0424249EA4559D28B9B869C /* PLAException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424C5FFD74A26FE4CBBB95 /* PLAException.h */; };
+		D0424341979B562581C1B9F0 /* PLADefaultEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04248A654886F51BF43DC31 /* PLADefaultEngine.h */; };
 		D04243FB5092FE130E04E0A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0424084BD74285C00CDA676 /* SystemConfiguration.framework */; };
 		D042448E59738623BD9F8167 /* PLAURLTransformerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */; };
 		D04244E00E76FE5112226814 /* PLAURLTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D042479FE827EC65311F298B /* PLAURLTransformer.m */; };
@@ -41,6 +43,7 @@
 		D042490504FB8AA7A111D7A0 /* PLAValueAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDF9DCB20DB5ECB65A9 /* PLAValueAdapter.h */; };
 		D0424A1945CE85C4FFAE2E8D /* PLAException.m in Sources */ = {isa = PBXBuildFile; fileRef = D04241FDDF9CD348A19C954D /* PLAException.m */; };
 		D0424B47A99CD8258E848002 /* PLAValueAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */; };
+		D0424BF3481B47B3F692D2AD /* PLARemoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042420BDD104A3401D359ED /* PLARemoteModel.m */; };
 		D0424C3A9CCC6CFC0DB7ACA6 /* PLACollectionSimplyConvertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243F2C2ED46BA17D51999 /* PLACollectionSimplyConvertTest.m */; };
 		D0424C73E0040625FE3D3788 /* PLAValueAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D6B7F50442152DBD03C /* PLAValueAdapterTest.m */; };
 		D0424CA7AC3487F540BA107A /* PLAURLTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */; };
@@ -48,6 +51,7 @@
 		D0424D1B85B6238E14D2AE21 /* PLACollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424FBEDCCA5F8AC6677BED /* PLACollectionTest.m */; };
 		D0424D36027347AA7D5004F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0424BB4B1C141AE53EA76ED /* CoreGraphics.framework */; };
 		D0424D6307A82D63E89114C2 /* PLAValueTransformerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */; };
+		D0424E2EB66DEAEA6FE73DA0 /* PLARemoteModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04240354605833D7519A9AB /* PLARemoteModel.h */; };
 		D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
 		D0424ED787D6CA9753264153 /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248A2FE3B7B70791E7367 /* SimpleModel.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +82,8 @@
 				D0424249EA4559D28B9B869C /* PLAException.h in CopyFiles */,
 				1C3D5120D8DE5C1D439DD46C /* PLAMapping.h in CopyFiles */,
 				1C3D55188534445862CB2CC8 /* PLAMappingPair.h in CopyFiles */,
+				D0424E2EB66DEAEA6FE73DA0 /* PLARemoteModel.h in CopyFiles */,
+				D0424341979B562581C1B9F0 /* PLADefaultEngine.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,10 +112,12 @@
 		B9B0FC7E169C70AB00506147 /* PlasmaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlasmaTests.h; sourceTree = "<group>"; };
 		B9B0FC7F169C70AB00506147 /* PlasmaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlasmaTests.m; sourceTree = "<group>"; };
 		D0424007152C7D71598370EE /* PLAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAModel.h; sourceTree = "<group>"; };
+		D04240354605833D7519A9AB /* PLARemoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLARemoteModel.h; sourceTree = "<group>"; };
 		D0424084BD74285C00CDA676 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformerTest.m; sourceTree = "<group>"; };
 		D042418BF7AD07F9E35D6DD9 /* PLAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAModel.m; sourceTree = "<group>"; };
 		D04241FDDF9CD348A19C954D /* PLAException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAException.m; sourceTree = "<group>"; };
+		D042420BDD104A3401D359ED /* PLARemoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLARemoteModel.m; sourceTree = "<group>"; };
 		D04242A8022CE9F187A2BAD7 /* PLAValueAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueAdapter.m; sourceTree = "<group>"; };
 		D04243D4FE7EFF85F921D479 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D04243E7F028F4354AFBE092 /* SimpleCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCollection.m; sourceTree = "<group>"; };
@@ -121,7 +129,9 @@
 		D04246A7CD13FC3BD1A345CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D042479FE827EC65311F298B /* PLAURLTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformer.m; sourceTree = "<group>"; };
 		D04248A2FE3B7B70791E7367 /* SimpleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleModel.m; sourceTree = "<group>"; };
+		D04248A654886F51BF43DC31 /* PLADefaultEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLADefaultEngine.h; sourceTree = "<group>"; };
 		D04248E3ED683E9F6DB230BF /* PLAURLTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAURLTransformer.h; sourceTree = "<group>"; };
+		D0424906B9E47B0F278D6A86 /* PLADefaultEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLADefaultEngine.m; sourceTree = "<group>"; };
 		D0424A5119F5CE5E455C8496 /* SimpleCollectionTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCollectionTransformer.h; sourceTree = "<group>"; };
 		D0424A56E8CE4D2112451541 /* PLAURLTransformerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAURLTransformerTest.m; sourceTree = "<group>"; };
 		D0424B0B669724E9432B9A36 /* PLAExceptionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAExceptionTest.m; sourceTree = "<group>"; };
@@ -322,6 +332,10 @@
 				1C3D50D484BE94393E9CC505 /* PLAMapping.m */,
 				1C3D505EAEB0EEDC7FC96B87 /* PLAMappingPair.m */,
 				1C3D57ED6BD13FACC9DDFC7C /* PLAMappingPair.h */,
+				D042420BDD104A3401D359ED /* PLARemoteModel.m */,
+				D04240354605833D7519A9AB /* PLARemoteModel.h */,
+				D0424906B9E47B0F278D6A86 /* PLADefaultEngine.m */,
+				D04248A654886F51BF43DC31 /* PLADefaultEngine.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -480,6 +494,8 @@
 				D0424A1945CE85C4FFAE2E8D /* PLAException.m in Sources */,
 				1C3D5B1FEBFF92B641FC3261 /* PLAMapping.m in Sources */,
 				1C3D5AEFA58353AEC7C8EB77 /* PLAMappingPair.m in Sources */,
+				D0424BF3481B47B3F692D2AD /* PLARemoteModel.m in Sources */,
+				D042412B16421457CA4EE984 /* PLADefaultEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
