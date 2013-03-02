@@ -70,13 +70,17 @@
     [self _startNetworking:completionBlock operation:[self deleteOperation]];
 }
 
+- (NSDictionary *)postObject {
+    return nil;
+}
+
 - (MKNetworkOperation *)fetchOperation {
     return [[self networkEngine] operationWithURLString:[self _absoluteUrlString]];
 }
 
 - (MKNetworkOperation *)updateOperation {
     MKNetworkOperation *operation = [[self networkEngine] operationWithURLString:[self _absoluteUrlString]
-                                                                          params:[self jsonObject]
+                                                                          params:[self postObject]
                                                                       httpMethod:kPLARemoteMethodUpdate];
     [operation setPostDataEncoding:MKNKPostDataEncodingTypeJSON];
     return operation;
@@ -84,7 +88,7 @@
 
 - (MKNetworkOperation *)createOperation {
     MKNetworkOperation *operation = [[self networkEngine] operationWithURLString:[self _absoluteUrlString]
-                                                                          params:[self jsonObject]
+                                                                          params:[self postObject]
                                                                       httpMethod:kPLARemoteMethodCreate];
     [operation setPostDataEncoding:MKNKPostDataEncodingTypeJSON];
     return operation;

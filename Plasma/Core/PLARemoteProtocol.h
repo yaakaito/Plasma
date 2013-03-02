@@ -20,4 +20,5 @@
 - (MKNetworkOperation *)updateOperation;
 - (MKNetworkOperation *)createOperation;
 - (MKNetworkOperation *)deleteOperation;
+- (NSDictionary *)postObject;
 @end

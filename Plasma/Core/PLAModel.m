@@ -44,10 +44,6 @@
     return [PLAMapping mappingTableWithDictionary:@{}];
 }
 
-+ (NSArray *)jsonProperties {
-    return nil;
-}
-
 - (BOOL)isEqual:(PLAModel *)model {
     if (self == model) {
         return YES;
