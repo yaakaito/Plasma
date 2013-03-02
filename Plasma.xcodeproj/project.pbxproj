@@ -51,6 +51,7 @@
 		D0424D1B85B6238E14D2AE21 /* PLACollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424FBEDCCA5F8AC6677BED /* PLACollectionTest.m */; };
 		D0424D36027347AA7D5004F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0424BB4B1C141AE53EA76ED /* CoreGraphics.framework */; };
 		D0424D6307A82D63E89114C2 /* PLAValueTransformerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240E34BAFD4D73FB300C8 /* PLAValueTransformerTest.m */; };
+		D0424D7E3F3757C0C4059797 /* PLARemoteProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042442DDD0598568ACE112E /* PLARemoteProtocol.h */; };
 		D0424E2EB66DEAEA6FE73DA0 /* PLARemoteModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04240354605833D7519A9AB /* PLARemoteModel.h */; };
 		D0424E96CDA2EA8511D860BC /* PLAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D042418BF7AD07F9E35D6DD9 /* PLAModel.m */; };
 		D0424ED787D6CA9753264153 /* SimpleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248A2FE3B7B70791E7367 /* SimpleModel.m */; };
@@ -84,6 +85,7 @@
 				1C3D55188534445862CB2CC8 /* PLAMappingPair.h in CopyFiles */,
 				D0424E2EB66DEAEA6FE73DA0 /* PLARemoteModel.h in CopyFiles */,
 				D0424341979B562581C1B9F0 /* PLADefaultEngine.h in CopyFiles */,
+				D0424D7E3F3757C0C4059797 /* PLARemoteProtocol.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,7 @@
 		D04243E7F028F4354AFBE092 /* SimpleCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCollection.m; sourceTree = "<group>"; };
 		D04243F2C2ED46BA17D51999 /* PLACollectionSimplyConvertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLACollectionSimplyConvertTest.m; sourceTree = "<group>"; };
 		D0424420C650FC7E3CDECFA0 /* PLACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLACollection.m; sourceTree = "<group>"; };
+		D042442DDD0598568ACE112E /* PLARemoteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLARemoteProtocol.h; sourceTree = "<group>"; };
 		D042442FBDFFC456F1713565 /* SimpleCollectionTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCollectionTransformer.m; sourceTree = "<group>"; };
 		D042446ED6038AF046F9181F /* SimpleCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCollection.h; sourceTree = "<group>"; };
 		D04245CB21F88CA8B66D87FB /* PLAValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAValueTransformer.m; sourceTree = "<group>"; };
@@ -336,6 +339,7 @@
 				D04240354605833D7519A9AB /* PLARemoteModel.h */,
 				D0424906B9E47B0F278D6A86 /* PLADefaultEngine.m */,
 				D04248A654886F51BF43DC31 /* PLADefaultEngine.h */,
+				D042442DDD0598568ACE112E /* PLARemoteProtocol.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";

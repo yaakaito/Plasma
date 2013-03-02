@@ -11,5 +11,7 @@
 @interface PLAModel : NSObject
 + (id)modelWithDictionary:(NSDictionary *)dictionary;
 + (PLAMapping *)propertiesMapping;
++ (NSArray *)jsonProperties;
 - (void)updateWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)jsonObject;
 @end

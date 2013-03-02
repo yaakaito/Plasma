@@ -7,29 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import "PLAModel.h"
+#import "PLARemoteProtocol.h"
 #import "MKNetworkKit.h"
 
 @class PLARemoteModel;
 
 typedef void(^PLARemoteModelCompletionBlock)(PLARemoteModel *model, NSError *error);
 
-#define kPLARemoteMethodFetch   (@"GET")
-#define kPLARemoteMethodUpdate  (@"PUT")
-#define kPLARemoteMethodCreate  (@"POST")
-#define kPLARemoteMethodDelete  (@"DELETE")
-
-@interface PLARemoteModel : PLAModel
-
-- (NSString *)representationUrlString;
+@interface PLARemoteModel : PLAModel <PLARemoteProtocol>
 
 - (void)fetch:(PLARemoteModelCompletionBlock)completionBlock;
 - (void)update:(PLARemoteModelCompletionBlock)completionBlock;
 - (void)create:(PLARemoteModelCompletionBlock)completionBlock;
 - (void)delete:(PLARemoteModelCompletionBlock)completionBlock;
-
-- (MKNetworkOperation *)fetchOperation;
-- (MKNetworkOperation *)updateOperation;
-- (MKNetworkOperation *)createOperation;
-- (MKNetworkOperation *)deleteOperation;
 
 @end
