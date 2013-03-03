@@ -44,9 +44,10 @@ simply model framework. Plasma provide Model and Collection from NSDictionary (J
 
 ...
 
-## [WIP on branch/remote-model] PLARemoteModel & PLARemoveColletion
+## [WIP] PLARemoteModel & PLARemoveColletion
 
-inspired backbone.js and NSRails
+
+inspired by backbone.js and NSRails
 
 resource from Web API.
 
