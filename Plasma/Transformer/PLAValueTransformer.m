@@ -9,26 +9,10 @@
 
 #import "Overline.h"
 
-
-@interface PLAValueTransformer ()
-@property (nonatomic, strong) NSString *path;
-@end
-
 @implementation PLAValueTransformer
 
-+ (id)transformerWithPath:(NSString *)path {
-    return [[self alloc] initWithPath:path];
-}
-
-- (id)initWithPath:(NSString *)path {
-    self = [super init];
-    if (self == nil)  {
-        return nil;
-    }
-
-    self.path = path;
-
-    return self;
++ (id)transformer {
+    return [[self alloc] init];
 }
 
 - (BOOL)allowsReverseTransformation {
@@ -41,10 +25,5 @@
 
 - (id)transformedValue:(id)value {
     return value;
-}
-
-- (id)transformedValueWithDictionary:(NSDictionary *)dictionary {
-    id value = [dictionary objectForPath:self.path];
-    return [self transformedValue:value];
 }
 @end

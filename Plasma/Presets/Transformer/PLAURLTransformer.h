@@ -7,9 +7,5 @@
 
 #import "PLAValueTransformer.h"
 
-#ifndef PLA_URL
-#define PLA_URL(p) [PLAURLTransformer transformerWithPath:p]
-#endif
-
 @interface PLAURLTransformer : PLAValueTransformer
 @end
