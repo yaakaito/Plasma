@@ -16,8 +16,8 @@
             @"string" : @"string",
             @"number" : @"number",
     }];
-    [mapping addProperty:@"url" path:@"url" transformer:[[PLAURLTransformer alloc] init]];
-    [mapping addProperty:@"collection" path:@"collection" transformer:[[SimpleCollectionTransformer alloc] init]];
+    [mapping addProperty:@"url" path:@"url" transformer:[PLAURLTransformer transformer]];
+    [mapping addProperty:@"collection" path:@"collection" transformer:[SimpleCollectionTransformer transformer]];
     return mapping;
 }
 

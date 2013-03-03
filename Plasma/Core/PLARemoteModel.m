@@ -8,18 +8,31 @@
 #import "PLARemoteModel.h"
 #import "PLADefaultEngine.h"
 
+typedef enum {
+    kPLARemoteActionFetch,
+    kPLARemoteActionCreate,
+    kPLARemoteActionUpdate,
+    kPLARemoteActionDelete
+} PLARemoteAction;
+
 
 @implementation PLARemoteModel
 
 - (void)_startNetworking:(PLARemoteModelCompletionBlock)completionBlock
                operation:(MKNetworkOperation *)operation
+                  action:(PLARemoteAction)action
 {
     [operation addCompletionHandler:^(MKNetworkOperation *completedOperation) {
         // [completedOperation responseData];
         // TODO: response parser
-        [self updateWithDictionary:[completedOperation responseJSON]];
-        __weak PLARemoteModel *model = self;
-        completionBlock(model, nil);
+        if (action == kPLARemoteActionDelete) {
+            completionBlock(nil, nil);
+        }
+        else {
+            [self updateWithDictionary:[completedOperation responseJSON]];
+            __weak PLARemoteModel *model = self;
+            completionBlock(model, nil);
+        }
 
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         completionBlock(nil, error);
@@ -55,19 +68,19 @@
 }
 
 - (void)fetch:(PLARemoteModelCompletionBlock)completionBlock {
-    [self _startNetworking:completionBlock operation:[self fetchOperation]];
+    [self _startNetworking:completionBlock operation:[self fetchOperation] action:kPLARemoteActionFetch];
 }
 
 - (void)update:(PLARemoteModelCompletionBlock)completionBlock {
-    [self _startNetworking:completionBlock operation:[self updateOperation]];
+    [self _startNetworking:completionBlock operation:[self updateOperation] action:kPLARemoteActionUpdate];
 }
 
 - (void)create:(PLARemoteModelCompletionBlock)completionBlock {
-    [self _startNetworking:completionBlock operation:[self createOperation]];
+    [self _startNetworking:completionBlock operation:[self createOperation] action:kPLARemoteActionCreate];
 }
 
 - (void)delete:(PLARemoteModelCompletionBlock)completionBlock {
-    [self _startNetworking:completionBlock operation:[self deleteOperation]];
+    [self _startNetworking:completionBlock operation:[self deleteOperation] action:kPLARemoteActionDelete];
 }
 
 - (NSDictionary *)postObject {
@@ -95,9 +108,10 @@
 }
 
 - (MKNetworkOperation *)deleteOperation {
-    MKNetworkOperation *operation = [[self networkEngine] operationWithPath:[self _absoluteUrlString]
-                                                                     params:nil
-                                                                 httpMethod:kPLARemoteMethodDelete];
+    MKNetworkOperation *operation = [[self networkEngine] operationWithURLString:[self _absoluteUrlString]
+                                                                          params:nil
+                                                                      httpMethod:kPLARemoteMethodDelete];
+    return operation;
 }
 
 @end
